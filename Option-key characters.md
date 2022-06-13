@@ -2,9 +2,10 @@
 
 Updates: http://github.com/RedBearAK/optspecialchars
 
-## Numbers row + Option:
+### Numbers row + Option:
          `  1  2  3  4  5  6  7  8  9  0  -  =  
         (`) ¡  ™  £  ¢  ∞  §  ¶  •  ª  º  –  ≠  
+
 ![Numbers row](images/Numbers_row-No_Modifiers.png)  
 ![Numbers row + Option](images/Numbers_row-Option.png)  
 
@@ -32,7 +33,7 @@ Updates: http://github.com/RedBearAK/optspecialchars
 
 Updates: http://github.com/RedBearAK/optspecialchars
 
-## Numbers row + Option + Shift:
+### Numbers row + Option + Shift:
         ~  !  @  #  $   %   ^   &  *  (  )  _  +  
         `  ⁄  €  ‹  ›   ﬁ   ﬂ   ‡  °  ·  ‚  —  ±  
 
@@ -60,7 +61,7 @@ Updates: http://github.com/RedBearAK/optspecialchars
 
 Updates: http://github.com/RedBearAK/optspecialchars
 
-## Tab key row + Option:
+### Tab key row + Option:
         q  w  e  r  t  y  u   i  o  p  [  ]  \  
         œ  ∑ (´) ®  †  ¥ (¨) (ˆ) ø  π  “  ‘  «  
 
@@ -85,10 +86,8 @@ Updates: http://github.com/RedBearAK/optspecialchars
 
     [Note 2] Option+e (Acute) accented characters:  
                 á é í ó ú  Á É Í Ó Ú  
-
     [Note 3] Option+u (Umlaut) accented characters:  
                 ä ë ï ö ü ÿ   Ä Ë Ï Ö Ü Ÿ  
-
     [Note 4] Option+i (Circumflex) accented characters:  
                 â ê î ô û   Â Ê Î Ô Û  
 
@@ -97,7 +96,7 @@ Updates: http://github.com/RedBearAK/optspecialchars
 
 Updates: http://github.com/RedBearAK/optspecialchars
 
-## Tab key row + Option + Shift:
+### Tab key row + Option + Shift:
         Q  W  E  R  T  Y  U  I  O  P  { }  |  
         Œ  „  ´  ‰  ˇ  Á  ¨  ˆ  Ø  ∏  ”  ’  »  
 
@@ -125,7 +124,7 @@ Key     | Description                                 |Unicode |   Alt Code
 
 Updates: http://github.com/RedBearAK/optspecialchars
 
-## Caps Lock row + Option:
+### Caps Lock row + Option:
         a  s  d  f  g  h  j  k  l  ;  '  
         å  ß  ∂  ƒ  ©  ˙  ∆  ˚  ¬  …  æ  
 
@@ -151,7 +150,7 @@ Updates: http://github.com/RedBearAK/optspecialchars
 
 Updates: http://github.com/RedBearAK/optspecialchars
 
-## Caps Lock row + Option + Shift:
+### Caps Lock row + Option + Shift:
         A  S  D  F  G  H  J  K  L  :  "  
         Å  Í  Î  Ï  ˝  Ó  Ô [] Ò  Ú  Æ  
 
@@ -177,7 +176,7 @@ Key     | Description                                 |Unicode |   Alt Code
 
 Updates: http://github.com/RedBearAK/optspecialchars
 
-## Shift keys row + Option:
+### Shift keys row + Option:
         z  x  c  v  b  n  m  ,  .  /  
         Ω  ≈  ç  √  ∫ (˜) µ  ≤  ≥  ÷  
 
@@ -205,7 +204,7 @@ Updates: http://github.com/RedBearAK/optspecialchars
 
 Updates: http://github.com/RedBearAK/optspecialchars
 
-## Shift keys row + Option + Shift:
+### Shift keys row + Option + Shift:
         Z  X  C  V  B  N  M  <  >  ?  
         ¸  ˛  Ç  ◊  ı  ˜  Â  ¯  ˘  ¿  
 
