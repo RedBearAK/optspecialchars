@@ -225,6 +225,6 @@ Key     | Description                                 |Unicode |   Alt Code
 ⇧+Opt+/ | Inverted Question mark                      |{U+00BF}|_(Alt+168)_  
 
 * * *  
-Version 2022-06-13  
+Revision date: 2022-06-13  
 
  **§ End of Document**
