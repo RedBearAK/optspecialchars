@@ -1,8 +1,9 @@
 # Special Characters on Apple Keyboards
 
-Updates: http://github.com/RedBearAK/optspecialchars
+Updates: http://github.com/RedBearAK/optspecialchars  
+Revision date: 2022-06-16  
 
-### Numbers row + Option:
+## Numbers row + Option:
          `  1  2  3  4  5  6  7  8  9  0  -  =  
         (`) ¡  ™  £  ¢  ∞  §  ¶  •  ª  º  –  ≠  
 
@@ -11,7 +12,7 @@ Updates: http://github.com/RedBearAK/optspecialchars
 
   Key   | Description                                 |Unicode |   Alt Code    
 --------|---------------------------------------------|:------:|:-------------:  
-  Opt+` | **Dead Keys Grave accent** (combining)      |[Note 1]| 
+  Opt+` | **Dead Keys Grave accent** (combining)      |[Note 1]|_(See below)_  
   Opt+1 | Inverted Exclamation Mark                   |{U+00A1}|_(Alt+173)_  
   Opt+2 | Trade Mark Sign Emoji                       |{U+2122}|_(Alt+0153)_  
   Opt+3 | British Pound currency symbol               |{U+00A3}|_(Alt+156)_  
@@ -29,9 +30,7 @@ Updates: http://github.com/RedBearAK/optspecialchars
 <div style="page-break-after : always; visibility : hidden"> 
 \pagebreak </div>
 
-Updates: http://github.com/RedBearAK/optspecialchars
-
-### Numbers row + Option + Shift:
+## Numbers row + Option + Shift:
         ~  !  @  #  $   %   ^   &  *  (  )  _  +  
         `  ⁄  €  ‹  ›   ﬁ   ﬂ   ‡  °  ·  ‚  —  ±  
 
@@ -44,7 +43,7 @@ Updates: http://github.com/RedBearAK/optspecialchars
 ⇧+Opt+1 | Fraction Slash                              |{U+2044}|_(No Alt Code)_  
 ⇧+Opt+2 | Euro currency symbol                        |{U+20AC}|_(Alt+0128)_  
 ⇧+Opt+3 | Single Left-Pointing Angle Quotation mark   |{U+2039}|_(Alt+0139)_  
-⇧+Opt+4 | Single Right-Pointing Angle Quotation mark  |{U+203A}| _(Alt+0155)_  
+⇧+Opt+4 | Single Right-Pointing Angle Quotation mark  |{U+203A}|_(Alt+0155)_  
 ⇧+Opt+5 | Latin Small Ligature Fi                     |{U+FB01}|_(No Alt Code)_  
 ⇧+Opt+6 | Latin Small Ligature Fl                     |{U+FB02}|_(No Alt Code)_  
 ⇧+Opt+7 | Double dagger (cross) symbol                |{U+2021}|_(Alt+0135)_  
@@ -58,9 +57,7 @@ Updates: http://github.com/RedBearAK/optspecialchars
 <div style="page-break-after : always; visibility : hidden"> 
 \pagebreak </div>
 
-Updates: http://github.com/RedBearAK/optspecialchars
-
-### Tab key row + Option:
+## Tab key row + Option:
         q  w  e  r  t  y  u   i  o  p  [  ]  \  
         œ  ∑ (´) ®  †  ¥ (¨) (ˆ) ø  π  “  ‘  «  
 
@@ -71,12 +68,12 @@ Updates: http://github.com/RedBearAK/optspecialchars
 --------|---------------------------------------------|:------:|:-------------:  
   Opt+Q | Small oe (oethel) ligature                  |{U+0153}|_(Alt+0156)_  
   Opt+W | N-Ary Summation (sigma) notation            |{U+2211}|_(No Alt Code)_  
-  Opt+E | **Dead Keys Acute accent** (combining)      |[Note 2]|  
+  Opt+E | **Dead Keys Acute accent** (combining)      |[Note 2]|_(See below)_  
   Opt+R | Registered Trade Mark Sign                  |{U+00AE}|_(Alt+0174)_  
   Opt+T | Simple dagger (cross) symbol                |{U+2020}|_(Alt+0134)_  
   Opt+Y | Japanese Yen currency symbol                |{U+00A5}|_(Alt+157)_  
-  Opt+U | **Dead Keys Umlaut accent** (combining)     |[Note 3]|  
-  Opt+I | **Dead Keys Circumflex accent** (combining) |[Note 4]|  
+  Opt+U | **Dead Keys Umlaut accent** (combining)     |[Note 3]|_(See below)_  
+  Opt+I | **Dead Keys Circumflex accent** (combining) |[Note 4]|_(See below)_  
   Opt+O | Latin Small Letter o with Stroke            |{U+00F8}|_(Alt+0248)_  
   Opt+P | Greek Small Letter Pi                       |{U+03C0}|_(Alt+227)_  
   Opt+[ | Left Double Quotation Mark                  |{U+201C}|_(Alt+0147)_  
@@ -87,9 +84,7 @@ Updates: http://github.com/RedBearAK/optspecialchars
 <div style="page-break-after : always; visibility : hidden"> 
 \pagebreak </div>
 
-Updates: http://github.com/RedBearAK/optspecialchars
-
-### Tab key row + Option + Shift:
+## Tab key row + Option + Shift:
         Q  W  E  R  T  Y  U  I  O  P  { }  |  
         Œ  „  ´  ‰  ˇ  Á  ¨  ˆ  Ø  ∏  ”  ’  »  
 
@@ -116,9 +111,7 @@ Key     | Description                                 |Unicode |   Alt Code
 <div style="page-break-after : always; visibility : hidden"> 
 \pagebreak </div>
 
-Updates: http://github.com/RedBearAK/optspecialchars
-
-### Caps Lock row + Option:
+## Caps Lock row + Option:
         a  s  d  f  g  h  j  k  l  ;  '  
         å  ß  ∂  ƒ  ©  ˙  ∆  ˚  ¬  …  æ  
 
@@ -143,9 +136,7 @@ Updates: http://github.com/RedBearAK/optspecialchars
 <div style="page-break-after : always; visibility : hidden"> 
 \pagebreak </div>
 
-Updates: http://github.com/RedBearAK/optspecialchars
-
-### Caps Lock row + Option + Shift:
+## Caps Lock row + Option + Shift:
         A  S  D  F  G  H  J  K  L  :  "  
         Å  Í  Î  Ï  ˝  Ó  Ô [] Ò  Ú  Æ  
 
@@ -155,24 +146,24 @@ Updates: http://github.com/RedBearAK/optspecialchars
 Key     | Description                                 |Unicode |   Alt Code    
 --------|---------------------------------------------|:------:|:-------------:  
 ⇧+Opt+A | Capital Letter A with Ring Above            |{U+00C5}|_(Alt+143)_  
-⇧+Opt+S | Latin Capital Letter I with Acute           |{U+00CD}|(Alt+0205)  
+⇧+Opt+S | Latin Capital Letter I with Acute           |{U+00CD}|_(Alt+0205)_  
 ⇧+Opt+D | Latin Capital Letter I with Circumflex      |{U+00CE}|_(Alt+0206)_  
 ⇧+Opt+F | Latin Capital Letter I with Diaeresis       |{U+00CF}|_(Alt+0207)_  
 ⇧+Opt+G | Double Acute Accent (non-combining)         |{U+02DD}|_(No Alt Code)_  
 ⇧+Opt+H | Latin Capital Letter O with Acute           |{U+00D3}|_(Alt+0211)_  
 ⇧+Opt+J | Latin Capital Letter O with Circumflex      |{U+00D4}|_(Alt+0212)_  
-⇧+Opt+K | Apple logo [needs Baskerville font]         |{U+F8FF}|_(No Alt Code)_  
+⇧+Opt+K | Apple logo ‡ _(See footnote)_               |{U+F8FF}|_(No Alt Code)_  
 ⇧+Opt+L | Latin Capital Letter O with Grave           |{U+00D2}|_(Alt+0210)_  
 ⇧+Opt+; | Latin Capital Letter U with Acute           |{U+00DA}|_(Alt+0218)_  
 ⇧+Opt+' | Capital AE ligature                         |{U+00C6}|_(Alt+146)_  
+
+‡ The Apple logo character is in a Unicode "Private Use Area" and is only found in Mac fonts (at U+F8FF) or _Baskerville Old Face_ font on PCs (at U+F000). In Windows **_Character Map_** app, use _Advanced View -> Go to Unicode -> F000_ after selecting Baskerville Old Face in the **_Font_** field. App must support the use of the character in that font. Character will not show properly in general text editors that can't attach font metadata to the character, but should paste and show up in word processors or desktop publishing software. If not supported by the app/font, it will show a [blank], or a box with ? or F8/FF inside. 
 
 
 <div style="page-break-after : always; visibility : hidden"> 
 \pagebreak </div>
 
-Updates: http://github.com/RedBearAK/optspecialchars
-
-### Shift keys row + Option:
+## Shift keys row + Option:
         z  x  c  v  b  n  m  ,  .  /  
         Ω  ≈  ç  √  ∫ (˜) µ  ≤  ≥  ÷  
 
@@ -186,7 +177,7 @@ Updates: http://github.com/RedBearAK/optspecialchars
   Opt+C | Small Letter c with Cedilla                 |{U+00E7}|_(Alt+130)_  
   Opt+V | Square Root radical sign                    |{U+221A}|_(Alt+251)_  
   Opt+B | Integral mathematical symbol                |{U+222B}|_(No Alt Code)_  
-  Opt+N | **Dead Keys Tilde accent** (combining)      |[Note 5]|  
+  Opt+N | **Dead Keys Tilde accent** (combining)      |[Note 5]|_(See below)_  
   Opt+M | Micro (mu) symbol                           |{U+00B5}|_(Alt+230)_  
   Opt+, | Less Than or Equal To symbol                |{U+2264}|_(Alt+243)_  
   Opt+. | Greater Than or Equal To symbol             |{U+2265}|_(Alt+242)_  
@@ -196,9 +187,7 @@ Updates: http://github.com/RedBearAK/optspecialchars
 <div style="page-break-after : always; visibility : hidden"> 
 \pagebreak </div>
 
-Updates: http://github.com/RedBearAK/optspecialchars
-
-### Shift keys row + Option + Shift:
+## Shift keys row + Option + Shift:
         Z  X  C  V  B  N  M  <  >  ?  
         ¸  ˛  Ç  ◊  ı  ˜  Â  ¯  ˘  ¿  
 
@@ -222,9 +211,7 @@ Key     | Description                                 |Unicode |   Alt Code
 <div style="page-break-after : always; visibility : hidden"> 
 \pagebreak </div>
 
-Updates: http://github.com/RedBearAK/optspecialchars
-
-### [Note 1] Dead Keys: Grave Accent
+## [Note 1] Dead Keys: Grave Accent
 
 Type Option+Grave, then a/e/i/o/u or A/E/I/O/U, to produce:  
 
@@ -235,24 +222,22 @@ Type Option+Grave, then a/e/i/o/u or A/E/I/O/U, to produce:
 
 Key     | Description                                 |Unicode |   Alt Code    
 --------|---------------------------------------------|:------:|:-------------:  
-Opt+`, a| Latin Small a with Grave Accent             |{U+00E0}|_(Alt+0224)_  
-Opt+`, e| Latin Small e with Grave Accent             |{U+00E8}|_(Alt+0232)_  
-Opt+`, i| Latin Small i with Grave Accent             |{U+00EC}|_(Alt+0236)_  
-Opt+`, o| Latin Small o with Grave Accent             |{U+00F2}|_(Alt+0242)_  
-Opt+`, u| Latin Small u with Grave Accent             |{U+00F9}|_(Alt+0249)_  
-Opt+`, A| Latin Capital A with Grave Accent           |{U+00C0}|_(Alt+0192)_  
-Opt+`, E| Latin Capital E with Grave Accent           |{U+00C8}|_(Alt+0200)_  
-Opt+`, I| Latin Capital I with Grave Accent           |{U+00CC}|_(Alt+0204)_  
-Opt+`, O| Latin Capital O with Grave Accent           |{U+00D2}|_(Alt+0210)_  
-Opt+`, U| Latin Capital U with Grave Accent           |{U+00D9}|_(Alt+0217)_  
+Opt+`, a| Latin Small a with Grave Diacritic          |{U+00E0}|_(Alt+0224)_  
+Opt+`, e| Latin Small e with Grave Diacritic          |{U+00E8}|_(Alt+0232)_  
+Opt+`, i| Latin Small i with Grave Diacritic          |{U+00EC}|_(Alt+0236)_  
+Opt+`, o| Latin Small o with Grave Diacritic          |{U+00F2}|_(Alt+0242)_  
+Opt+`, u| Latin Small u with Grave Diacritic          |{U+00F9}|_(Alt+0249)_  
+Opt+`, A| Latin Capital A with Grave Diacritic        |{U+00C0}|_(Alt+0192)_  
+Opt+`, E| Latin Capital E with Grave Diacritic        |{U+00C8}|_(Alt+0200)_  
+Opt+`, I| Latin Capital I with Grave Diacritic        |{U+00CC}|_(Alt+0204)_  
+Opt+`, O| Latin Capital O with Grave Diacritic        |{U+00D2}|_(Alt+0210)_  
+Opt+`, U| Latin Capital U with Grave Diacritic        |{U+00D9}|_(Alt+0217)_  
 
 
 <div style="page-break-after : always; visibility : hidden"> 
 \pagebreak </div>
 
-Updates: http://github.com/RedBearAK/optspecialchars
-
-### [Note 2] Dead Keys: Acute Accent
+## [Note 2] Dead Keys: Acute Accent
 
 Type Option+e, then a/e/i/o/u or A/E/I/O/U, to produce:  
 
@@ -263,24 +248,22 @@ Type Option+e, then a/e/i/o/u or A/E/I/O/U, to produce:
 
 Key     | Description                                 |Unicode |   Alt Code    
 --------|---------------------------------------------|:------:|:-------------:  
-Opt+`, a| Latin Small a with Acute Accent             |{U+00E1}|_(Alt+0225)_  
-Opt+`, e| Latin Small e with Acute Accent             |{U+00E9}|_(Alt+0233)_  
-Opt+`, i| Latin Small i with Acute Accent             |{U+00ED}|_(Alt+0237)_  
-Opt+`, o| Latin Small o with Acute Accent             |{U+00F3}|_(Alt+0243)_  
-Opt+`, u| Latin Small u with Acute Accent             |{U+00FA}|_(Alt+0250)_  
-Opt+`, A| Latin Capital A with Acute Accent           |{U+00C1}|_(Alt+0193)_  
-Opt+`, E| Latin Capital E with Acute Accent           |{U+00C9}|_(Alt+0201)_  
-Opt+`, I| Latin Capital I with Acute Accent           |{U+00CD}|_(Alt+0205)_  
-Opt+`, O| Latin Capital O with Acute Accent           |{U+00D3}|_(Alt+0211)_  
-Opt+`, U| Latin Capital U with Acute Accent           |{U+00DA}|_(Alt+0218)_  
+Opt+`, a| Latin Small a with Acute Diacritic          |{U+00E1}|_(Alt+0225)_  
+Opt+`, e| Latin Small e with Acute Diacritic          |{U+00E9}|_(Alt+0233)_  
+Opt+`, i| Latin Small i with Acute Diacritic          |{U+00ED}|_(Alt+0237)_  
+Opt+`, o| Latin Small o with Acute Diacritic          |{U+00F3}|_(Alt+0243)_  
+Opt+`, u| Latin Small u with Acute Diacritic          |{U+00FA}|_(Alt+0250)_  
+Opt+`, A| Latin Capital A with Acute Diacritic        |{U+00C1}|_(Alt+0193)_  
+Opt+`, E| Latin Capital E with Acute Diacritic        |{U+00C9}|_(Alt+0201)_  
+Opt+`, I| Latin Capital I with Acute Diacritic        |{U+00CD}|_(Alt+0205)_  
+Opt+`, O| Latin Capital O with Acute Diacritic        |{U+00D3}|_(Alt+0211)_  
+Opt+`, U| Latin Capital U with Acute Diacritic        |{U+00DA}|_(Alt+0218)_  
 
 
 <div style="page-break-after : always; visibility : hidden"> 
 \pagebreak </div>
 
-Updates: http://github.com/RedBearAK/optspecialchars
-
-### [Note 3] Dead Keys: Umlaut Accent
+## [Note 3] Dead Keys: Umlaut Accent
 
 Type Option+u, then a/e/i/o/u/y or A/E/I/O/U/Y, to produce:  
 
@@ -291,26 +274,24 @@ Type Option+u, then a/e/i/o/u/y or A/E/I/O/U/Y, to produce:
 
 Key     | Description                                 |Unicode |   Alt Code    
 --------|---------------------------------------------|:------:|:-------------:  
-Opt+`, a| Latin Small a with Umlaut Accent            |{U+00E4}|_(Alt+0228)_  
-Opt+`, e| Latin Small e with Umlaut Accent            |{U+00EB}|_(Alt+0235)_  
-Opt+`, i| Latin Small i with Umlaut Accent            |{U+00EF}|_(Alt+0239)_  
-Opt+`, o| Latin Small o with Umlaut Accent            |{U+00F6}|_(Alt+0246)_  
-Opt+`, u| Latin Small u with Umlaut Accent            |{U+00FC}|_(Alt+0252)_  
-Opt+`, y| Latin Small y with Umlaut Accent            |{U+00FF}|_(Alt+0255)_  
-Opt+`, A| Latin Capital A with Umlaut Accent          |{U+00C4}|_(Alt+0196)_  
-Opt+`, E| Latin Capital E with Umlaut Accent          |{U+00CB}|_(Alt+0203)_  
-Opt+`, I| Latin Capital I with Umlaut Accent          |{U+00CF}|_(Alt+0207)_  
-Opt+`, O| Latin Capital O with Umlaut Accent          |{U+00D6}|_(Alt+0214)_  
-Opt+`, U| Latin Capital U with Umlaut Accent          |{U+00DC}|_(Alt+0220)_  
-Opt+`, Y| Latin Capital Y with Umlaut Accent          |{U+0178}|_(Alt+0159)_  
+Opt+`, a| Latin Small a with Umlaut Diacritic         |{U+00E4}|_(Alt+0228)_  
+Opt+`, e| Latin Small e with Umlaut Diacritic         |{U+00EB}|_(Alt+0235)_  
+Opt+`, i| Latin Small i with Umlaut Diacritic         |{U+00EF}|_(Alt+0239)_  
+Opt+`, o| Latin Small o with Umlaut Diacritic         |{U+00F6}|_(Alt+0246)_  
+Opt+`, u| Latin Small u with Umlaut Diacritic         |{U+00FC}|_(Alt+0252)_  
+Opt+`, y| Latin Small y with Umlaut Diacritic         |{U+00FF}|_(Alt+0255)_  
+Opt+`, A| Latin Capital A with Umlaut Diacritic       |{U+00C4}|_(Alt+0196)_  
+Opt+`, E| Latin Capital E with Umlaut Diacritic       |{U+00CB}|_(Alt+0203)_  
+Opt+`, I| Latin Capital I with Umlaut Diacritic       |{U+00CF}|_(Alt+0207)_  
+Opt+`, O| Latin Capital O with Umlaut Diacritic       |{U+00D6}|_(Alt+0214)_  
+Opt+`, U| Latin Capital U with Umlaut Diacritic       |{U+00DC}|_(Alt+0220)_  
+Opt+`, Y| Latin Capital Y with Umlaut Diacritic       |{U+0178}|_(Alt+0159)_  
 
 
 <div style="page-break-after : always; visibility : hidden"> 
 \pagebreak </div>
 
-Updates: http://github.com/RedBearAK/optspecialchars
-
-### [Note 4] Dead Keys: Circumflex Accent
+## [Note 4] Dead Keys: Circumflex Accent
 
 Type Option+i, then a/e/i/o/u or A/E/I/O/U, to produce: 
 
@@ -321,24 +302,22 @@ Type Option+i, then a/e/i/o/u or A/E/I/O/U, to produce:
 
 Key     | Description                                 |Unicode |   Alt Code    
 --------|---------------------------------------------|:------:|:-------------:  
-Opt+`, a| Latin Small a with Circumflex Accent        |{U+00E2}|_(Alt+0226)_  
-Opt+`, e| Latin Small e with Circumflex Accent        |{U+00EA}|_(Alt+0234)_  
-Opt+`, i| Latin Small i with Circumflex Accent        |{U+00EE}|_(Alt+0238)_  
-Opt+`, o| Latin Small o with Circumflex Accent        |{U+00F4}|_(Alt+0244)_  
-Opt+`, u| Latin Small u with Circumflex Accent        |{U+00FB}|_(Alt+0251)_  
-Opt+`, A| Latin Capital A with Circumflex Accent      |{U+00C2}|_(Alt+0194)_  
-Opt+`, E| Latin Capital E with Circumflex Accent      |{U+00CA}|_(Alt+0202)_  
-Opt+`, I| Latin Capital I with Circumflex Accent      |{U+00CE}|_(Alt+0206)_  
-Opt+`, O| Latin Capital O with Circumflex Accent      |{U+00D4}|_(Alt+0212)_  
-Opt+`, U| Latin Capital U with Circumflex Accent      |{U+00DB}|_(Alt+0219)_  
+Opt+`, a| Latin Small a with Circumflex Diacritic     |{U+00E2}|_(Alt+0226)_  
+Opt+`, e| Latin Small e with Circumflex Diacritic     |{U+00EA}|_(Alt+0234)_  
+Opt+`, i| Latin Small i with Circumflex Diacritic     |{U+00EE}|_(Alt+0238)_  
+Opt+`, o| Latin Small o with Circumflex Diacritic     |{U+00F4}|_(Alt+0244)_  
+Opt+`, u| Latin Small u with Circumflex Diacritic     |{U+00FB}|_(Alt+0251)_  
+Opt+`, A| Latin Capital A with Circumflex Diacritic   |{U+00C2}|_(Alt+0194)_  
+Opt+`, E| Latin Capital E with Circumflex Diacritic   |{U+00CA}|_(Alt+0202)_  
+Opt+`, I| Latin Capital I with Circumflex Diacritic   |{U+00CE}|_(Alt+0206)_  
+Opt+`, O| Latin Capital O with Circumflex Diacritic   |{U+00D4}|_(Alt+0212)_  
+Opt+`, U| Latin Capital U with Circumflex Diacritic   |{U+00DB}|_(Alt+0219)_  
 
 
 <div style="page-break-after : always; visibility : hidden"> 
 \pagebreak </div>
 
-Updates: http://github.com/RedBearAK/optspecialchars
-
-### [Note 5] Dead Keys: Tilde Accent
+## [Note 5] Dead Keys: Tilde Accent
 
 Type Option+n, then a/n/o or A/N/O to produce: 
 
@@ -349,15 +328,14 @@ Type Option+n, then a/n/o or A/N/O to produce:
 
 Key     | Description                                 |Unicode |   Alt Code    
 --------|---------------------------------------------|:------:|:-------------:  
-Opt+`, a| Latin Small a with Tilde Accent             |{U+00E3}|_(Alt+0227)_  
-Opt+`, n| Latin Small n with Tilde Accent             |{U+00F1}|_(Alt+0241)_  
-Opt+`, o| Latin Small o with Tilde Accent             |{U+00F5}|_(Alt+0245)_  
-Opt+`, A| Latin Capital A with Tilde Accent           |{U+00C3}|_(Alt+0195)_  
-Opt+`, N| Latin Capital N with Tilde Accent           |{U+00D1}|_(Alt+0209)_  
-Opt+`, O| Latin Capital O with Tilde Accent           |{U+00D5}|_(Alt+0213)_  
+Opt+`, a| Latin Small a with Tilde Diacritic          |{U+00E3}|_(Alt+0227)_  
+Opt+`, n| Latin Small n with Tilde Diacritic          |{U+00F1}|_(Alt+0241)_  
+Opt+`, o| Latin Small o with Tilde Diacritic          |{U+00F5}|_(Alt+0245)_  
+Opt+`, A| Latin Capital A with Tilde Diacritic        |{U+00C3}|_(Alt+0195)_  
+Opt+`, N| Latin Capital N with Tilde Diacritic        |{U+00D1}|_(Alt+0209)_  
+Opt+`, O| Latin Capital O with Tilde Diacritic        |{U+00D5}|_(Alt+0213)_  
 
 
 * * *  
-Revision date: 2022-06-16  
 
  **§ End of Document**
