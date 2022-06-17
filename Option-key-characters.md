@@ -34,7 +34,7 @@ Revision date: 2022-06-16
         ~  !  @  #  $   %   ^   &  *  (  )  _  +  
         `  ⁄  €  ‹  ›   ﬁ   ﬂ   ‡  °  ·  ‚  —  ±  
 
-![Numbers row](images/Numbers_row-No_Modifiers.png)  
+![Numbers row + Shift](images/Numbers_row-Shift.png)  
 ![Numbers row + Option + Shift](images/Numbers_row-Option-Shift.png)  
 
   Key   | Description                                 |Unicode |   Alt Code    
@@ -88,7 +88,7 @@ Revision date: 2022-06-16
         Q  W  E  R  T  Y  U  I  O  P  { }  |  
         Œ  „  ´  ‰  ˇ  Á  ¨  ˆ  Ø  ∏  ”  ’  »  
 
-![Tab key row](images/Tab_key_row-No_Modifiers.png)  
+![Tab key row + Shift](images/Tab_key_row-Shift.png)  
 ![Tab key row + Option + Shift](images/Tab_key_row-Option-Shift.png)  
 
 Key     | Description                                 |Unicode |   Alt Code    
@@ -140,7 +140,7 @@ Key     | Description                                 |Unicode |   Alt Code
         A  S  D  F  G  H  J  K  L  :  "  
         Å  Í  Î  Ï  ˝  Ó  Ô [] Ò  Ú  Æ  
 
-![Caps Lock row](images/CapsLock_row-No_Modifiers.png)  
+![Caps Lock row + Shift](images/CapsLock_row-Shift.png)  
 ![Caps Lock row + Option + Shift](images/CapsLock_row-Option-Shift.png)  
 
 Key     | Description                                 |Unicode |   Alt Code    
@@ -191,7 +191,7 @@ Key     | Description                                 |Unicode |   Alt Code
         Z  X  C  V  B  N  M  <  >  ?  
         ¸  ˛  Ç  ◊  ı  ˜  Â  ¯  ˘  ¿  
 
-![Shift keys row](images/Shift_keys_row-No_Modifiers.png)  
+![Shift keys row + Shift](images/Shift_keys_row-Shift.png)  
 ![Shift keys row + Option + Shift](images/Shift_keys_row-Option-Shift.png)  
 
 Key     | Description                                 |Unicode |   Alt Code    
