@@ -1,7 +1,7 @@
 # Special Characters on Apple Keyboards
 
 Updates: http://github.com/RedBearAK/optspecialchars  
-Revision date: 2022-06-16  
+Revision date: 2022-06-17  
 
 ## Numbers row + Option:
          `  1  2  3  4  5  6  7  8  9  0  -  =  
