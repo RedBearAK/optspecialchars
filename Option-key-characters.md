@@ -1,14 +1,26 @@
 # Special Characters on Apple Keyboards
 
 Updates: http://github.com/RedBearAK/optspecialchars  
+
 Revision date: 2022-06-17  
 
-## Numbers row + Option:
+
+This document catalogues all characters that are available on a standard US Apple keyboard in macOS with **Option** and **Shift+Option** keys, along with their Unicode addresses and Alt Codes (all characters have Unicode numbers except the Apple logo, but not all characters have Alt Codes). The list does not include additional characters that may be available on the ABC Extended keyboard. 
+
+The page breaks in this document are designed to allow the document to print out on 14 pages, or 7 duplexed pages, with related **Option** and **Shift+Option** characters from the same row on facing pages if using double-sided printing. 
+
+The last five pages are dedicated to **_[Notes]_** listing all the accented characters that can be made with each of the "dead keys", which are shown in orange on some rows of Apple's **_Keyboard Viewer_**. (See screenshot images in each section.)  
+
+
+<div style="page-break-after : always; visibility : hidden"> 
+\pagebreak </div>
+
+## § Numbers row with _Option_:
          `  1  2  3  4  5  6  7  8  9  0  -  =  
         (`) ¡  ™  £  ¢  ∞  §  ¶  •  ª  º  –  ≠  
 
 ![Numbers row](images/Numbers_row-No_Modifiers.png)  
-![Numbers row + Option](images/Numbers_row-Option.png)  
+![Numbers row with Option](images/Numbers_row-Option.png)  
 
   Key   | Description                                 |Unicode |   Alt Code    
 --------|---------------------------------------------|:------:|:-------------:  
@@ -30,12 +42,12 @@ Revision date: 2022-06-17
 <div style="page-break-after : always; visibility : hidden"> 
 \pagebreak </div>
 
-## Numbers row + Option + Shift:
+## § Numbers row with _Shift+Option_:
         ~  !  @  #  $   %   ^   &  *  (  )  _  +  
         `  ⁄  €  ‹  ›   ﬁ   ﬂ   ‡  °  ·  ‚  —  ±  
 
-![Numbers row + Shift](images/Numbers_row-Shift.png)  
-![Numbers row + Option + Shift](images/Numbers_row-Option-Shift.png)  
+![Numbers row with Shift](images/Numbers_row-Shift.png)  
+![Numbers row with Shift+Option](images/Numbers_row-Option-Shift.png)  
 
   Key   | Description                                 |Unicode |   Alt Code    
 --------|---------------------------------------------|:------:|:-------------:  
@@ -57,12 +69,12 @@ Revision date: 2022-06-17
 <div style="page-break-after : always; visibility : hidden"> 
 \pagebreak </div>
 
-## Tab key row + Option:
+## § Tab key row with _Option_:
         q  w  e  r  t  y  u   i  o  p  [  ]  \  
         œ  ∑ (´) ®  †  ¥ (¨) (ˆ) ø  π  “  ‘  «  
 
 ![Tab key row](images/Tab_key_row-No_Modifiers.png)  
-![Tab key row + Option](images/Tab_key_row-Option.png)  
+![Tab key row with Option](images/Tab_key_row-Option.png)  
 
   Key   | Description                                 |Unicode |   Alt Code    
 --------|---------------------------------------------|:------:|:-------------:  
@@ -84,12 +96,12 @@ Revision date: 2022-06-17
 <div style="page-break-after : always; visibility : hidden"> 
 \pagebreak </div>
 
-## Tab key row + Option + Shift:
+## § Tab key row with _Shift+Option_:
         Q  W  E  R  T  Y  U  I  O  P  { }  |  
         Œ  „  ´  ‰  ˇ  Á  ¨  ˆ  Ø  ∏  ”  ’  »  
 
-![Tab key row + Shift](images/Tab_key_row-Shift.png)  
-![Tab key row + Option + Shift](images/Tab_key_row-Option-Shift.png)  
+![Tab key row with Shift](images/Tab_key_row-Shift.png)  
+![Tab key row with Shift+Option](images/Tab_key_row-Option-Shift.png)  
 
 Key     | Description                                 |Unicode |   Alt Code    
 --------|---------------------------------------------|:------:|:-------------:  
@@ -111,12 +123,12 @@ Key     | Description                                 |Unicode |   Alt Code
 <div style="page-break-after : always; visibility : hidden"> 
 \pagebreak </div>
 
-## Caps Lock row + Option:
+## § Caps Lock row with _Option_:
         a  s  d  f  g  h  j  k  l  ;  '  
         å  ß  ∂  ƒ  ©  ˙  ∆  ˚  ¬  …  æ  
 
 ![Caps Lock row](images/CapsLock_row-No_Modifiers.png)  
-![Caps Lock row + Option](images/CapsLock_row-Option.png)  
+![Caps Lock row with Option](images/CapsLock_row-Option.png)  
 
   Key   | Description                                 |Unicode |   Alt Code    
 --------|---------------------------------------------|:------:|:-------------:  
@@ -136,12 +148,12 @@ Key     | Description                                 |Unicode |   Alt Code
 <div style="page-break-after : always; visibility : hidden"> 
 \pagebreak </div>
 
-## Caps Lock row + Option + Shift:
+## § Caps Lock row with _Shift+Option_:
         A  S  D  F  G  H  J  K  L  :  "  
         Å  Í  Î  Ï  ˝  Ó  Ô [] Ò  Ú  Æ  
 
-![Caps Lock row + Shift](images/CapsLock_row-Shift.png)  
-![Caps Lock row + Option + Shift](images/CapsLock_row-Option-Shift.png)  
+![Caps Lock row with Shift](images/CapsLock_row-Shift.png)  
+![Caps Lock row with Shift+Option](images/CapsLock_row-Option-Shift.png)  
 
 Key     | Description                                 |Unicode |   Alt Code    
 --------|---------------------------------------------|:------:|:-------------:  
@@ -163,12 +175,12 @@ Key     | Description                                 |Unicode |   Alt Code
 <div style="page-break-after : always; visibility : hidden"> 
 \pagebreak </div>
 
-## Shift keys row + Option:
+## § Shift keys row with _Option_:
         z  x  c  v  b  n  m  ,  .  /  
         Ω  ≈  ç  √  ∫ (˜) µ  ≤  ≥  ÷  
 
 ![Shift keys row](images/Shift_keys_row-No_Modifiers.png)  
-![Shift keys row + Option](images/Shift_keys_row-Option.png)  
+![Shift keys row with Option](images/Shift_keys_row-Option.png)  
 
   Key   | Description                                 |Unicode |   Alt Code    
 --------|---------------------------------------------|:------:|:-------------:  
@@ -187,12 +199,12 @@ Key     | Description                                 |Unicode |   Alt Code
 <div style="page-break-after : always; visibility : hidden"> 
 \pagebreak </div>
 
-## Shift keys row + Option + Shift:
+## § Shift keys row with _Shift+Option_:
         Z  X  C  V  B  N  M  <  >  ?  
         ¸  ˛  Ç  ◊  ı  ˜  Â  ¯  ˘  ¿  
 
-![Shift keys row + Shift](images/Shift_keys_row-Shift.png)  
-![Shift keys row + Option + Shift](images/Shift_keys_row-Option-Shift.png)  
+![Shift keys row with Shift](images/Shift_keys_row-Shift.png)  
+![Shift keys row with Shift+Option](images/Shift_keys_row-Option-Shift.png)  
 
 Key     | Description                                 |Unicode |   Alt Code    
 --------|---------------------------------------------|:------:|:-------------:  
@@ -211,14 +223,14 @@ Key     | Description                                 |Unicode |   Alt Code
 <div style="page-break-after : always; visibility : hidden"> 
 \pagebreak </div>
 
-## [Note 1] Dead Keys: Grave Accent
+## § [Note 1] Dead Keys: Grave Accent
 
 Type Option+Grave, then a/e/i/o/u or A/E/I/O/U, to produce:  
 
           à  è  ì  ò  ù    À  È  Ì  Ò  Ù  
 
 ![Numbers row](images/Numbers_row-No_Modifiers.png)  
-![Numbers row + Option](images/Numbers_row-Option.png)  
+![Numbers row with Option](images/Numbers_row-Option.png)  
 
 Key     | Description                                 |Unicode |   Alt Code    
 --------|---------------------------------------------|:------:|:-------------:  
@@ -237,14 +249,14 @@ Opt+`, U| Latin Capital U with Grave Diacritic        |{U+00D9}|_(Alt+0217)_
 <div style="page-break-after : always; visibility : hidden"> 
 \pagebreak </div>
 
-## [Note 2] Dead Keys: Acute Accent
+## § [Note 2] Dead Keys: Acute Accent
 
 Type Option+e, then a/e/i/o/u or A/E/I/O/U, to produce:  
 
           á  é  í  ó  ú    Á  É  Í  Ó  Ú  
 
 ![Tab key row](images/Tab_key_row-No_Modifiers.png)  
-![Tab key row + Option](images/Tab_key_row-Option.png)  
+![Tab key row with Option](images/Tab_key_row-Option.png)  
 
 Key     | Description                                 |Unicode |   Alt Code    
 --------|---------------------------------------------|:------:|:-------------:  
@@ -263,14 +275,14 @@ Opt+`, U| Latin Capital U with Acute Diacritic        |{U+00DA}|_(Alt+0218)_
 <div style="page-break-after : always; visibility : hidden"> 
 \pagebreak </div>
 
-## [Note 3] Dead Keys: Umlaut Accent
+## § [Note 3] Dead Keys: Umlaut Accent
 
 Type Option+u, then a/e/i/o/u/y or A/E/I/O/U/Y, to produce:  
 
           ä  ë  ï  ö  ü  ÿ    Ä  Ë  Ï  Ö  Ü  Ÿ
 
 ![Tab key row](images/Tab_key_row-No_Modifiers.png)  
-![Tab key row + Option](images/Tab_key_row-Option.png)  
+![Tab key row with Option](images/Tab_key_row-Option.png)  
 
 Key     | Description                                 |Unicode |   Alt Code    
 --------|---------------------------------------------|:------:|:-------------:  
@@ -291,14 +303,14 @@ Opt+`, Y| Latin Capital Y with Umlaut Diacritic       |{U+0178}|_(Alt+0159)_
 <div style="page-break-after : always; visibility : hidden"> 
 \pagebreak </div>
 
-## [Note 4] Dead Keys: Circumflex Accent
+## § [Note 4] Dead Keys: Circumflex Accent
 
 Type Option+i, then a/e/i/o/u or A/E/I/O/U, to produce: 
 
           â  ê  î  ô  û    Â  Ê  Î  Ô  Û
 
 ![Tab key row](images/Tab_key_row-No_Modifiers.png)  
-![Tab key row + Option](images/Tab_key_row-Option.png)  
+![Tab key row with Option](images/Tab_key_row-Option.png)  
 
 Key     | Description                                 |Unicode |   Alt Code    
 --------|---------------------------------------------|:------:|:-------------:  
@@ -317,14 +329,14 @@ Opt+`, U| Latin Capital U with Circumflex Diacritic   |{U+00DB}|_(Alt+0219)_
 <div style="page-break-after : always; visibility : hidden"> 
 \pagebreak </div>
 
-## [Note 5] Dead Keys: Tilde Accent
+## § [Note 5] Dead Keys: Tilde Accent
 
 Type Option+n, then a/n/o or A/N/O to produce: 
 
           ã  ñ  õ    Ã  Ñ  Õ
 
 ![Shift keys row](images/Shift_keys_row-No_Modifiers.png)  
-![Shift keys row + Option](images/Shift_keys_row-Option.png)  
+![Shift keys row with Option](images/Shift_keys_row-Option.png)  
 
 Key     | Description                                 |Unicode |   Alt Code    
 --------|---------------------------------------------|:------:|:-------------:  
@@ -338,4 +350,4 @@ Opt+`, O| Latin Capital O with Tilde Diacritic        |{U+00D5}|_(Alt+0213)_
 
 * * *  
 
- **§ End of Document**
+ **◊ End of Document**
