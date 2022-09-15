@@ -1,0 +1,4258 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Option-key-characters_ABC-Extended.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="special-characters-and-accents-available-on-apples-abc-extended-keyboard-layout">Special Characters and Accents Available on Apple's [<strong>ABC Extended</strong>] Keyboard Layout</h1>
+<p>Updates: http://github.com/RedBearAK/optspecialchars<br>
+Revision date: 2022-09-13</p>
+<p>This document catalogues all characters that are available on the <strong>ABC Extended</strong> Apple keyboard layout in macOS with <strong>Option</strong> and <strong>Shift+Option</strong> keys, along with their Unicode addresses and Alt Codes (not all characters have Alt Codes; some have Alt Codes that only work in specific apps). This list is somewhat different than the list of special characters and accents available on the standard US keyboard layout. There are a total of 583 characters.</p>
+<p>Earlier pages in this document show each row of the keyboard, starting from the top row (numbers), first with the Option key and then with Shift+Option on the next page.</p>
+<p>The later pages are dedicated to an appendix listing all the accented characters that can be made with each of the &quot;dead keys&quot;, which are shown in orange on some rows of Apple's <strong><em>Keyboard Viewer</em></strong>. There are many more &quot;dead keys&quot; and <strong>combining</strong> accents on the <strong>ABC Extended</strong> keyboard layout than there are on the standard US layout, so the appendix is quite long.</p>
+<h2 id="unicode-combining-diacritical-marks-u0300%E2%80%93036f">Unicode Combining Diacritical Marks {U+0300–036F}</h2>
+<p>Several of the &quot;dead keys&quot; accent keys have a &quot;combining&quot; Unicode character variant available when adding the Shift key, or are already &quot;combining&quot; characters.</p>
+<p>Unicode Combining Diacritical Marks characters will combine with the <strong><em>previously typed</em></strong> character, whereas &quot;dead keys&quot; will place an accent in a highlighted selection in preparation for combining with the <strong><em>next</em></strong> character to be typed. The combining accent keys will also &quot;double up&quot; with the same or other accents, in various ways. Sometimes stacking, sometimes side-by-side, or both. Each &quot;dead key&quot; will only combine an accent with certain keys, but Unicode Combining Diacritical Marks will combine with <strong><em>any character</em></strong>. Exactly how this comes out when using multiple combining characters will depend on the software you are using.</p>
+<div style="page-break-after : always; visibility : hidden"> 
+\pagebreak </div>
+<h2 id="%C2%A7-numbers-row-with-option">§ Numbers row with <em>Option</em>:</h2>
+<pre><code>   NoMod:  `   1   2   3   4   5   6   7   8   9   0   -   =  
+  Option: (`)  ¡   ™   £   ¢   §  (ˆ)  ¶   •   ª   º   –   ≠  
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">–– Keys ––</th>
+<th>–––––––––––––– Description –––––––––––––––</th>
+<th style="text-align:center">–– Unicode ––</th>
+<th style="text-align:center">–– Alt Code ––</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Opt+`</td>
+<td><strong><em>(Dead Key: Grave Accent)†</em></strong></td>
+<td style="text-align:center"><code>{U+0060}</code></td>
+<td style="text-align:center"><em>(Alt+96)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+1</td>
+<td>Inverted Exclamation Mark</td>
+<td style="text-align:center"><code>{U+00A1}</code></td>
+<td style="text-align:center"><em>(Alt+173)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+2</td>
+<td>Trade Mark Sign Emoji</td>
+<td style="text-align:center"><code>{U+2122}</code></td>
+<td style="text-align:center"><em>(Alt+0153)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+3</td>
+<td>British Pound currency symbol</td>
+<td style="text-align:center"><code>{U+00A3}</code></td>
+<td style="text-align:center"><em>(Alt+156)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+4</td>
+<td>Cent currency symbol</td>
+<td style="text-align:center"><code>{U+00A2}</code></td>
+<td style="text-align:center"><em>(Alt+155)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+5</td>
+<td>Section symbol</td>
+<td style="text-align:center"><code>{U+00A7}</code></td>
+<td style="text-align:center"><em>(Alt+0167)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+6</td>
+<td><strong><em>(Dead Key: Circumflex Accent)†</em></strong></td>
+<td style="text-align:center"><code>{U+02C6}</code></td>
+<td style="text-align:center"><em>(Alt+0136)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+7</td>
+<td>Paragraph mark (Pilcrow) symbol</td>
+<td style="text-align:center"><code>{U+00B6}</code></td>
+<td style="text-align:center"><em>(Alt+0182)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+8</td>
+<td>Bullet Point symbol (solid)</td>
+<td style="text-align:center"><code>{U+2022}</code></td>
+<td style="text-align:center"><em>(Alt+0149)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+9</td>
+<td>Feminine Ordinal Indicator</td>
+<td style="text-align:center"><code>{U+00AA}</code></td>
+<td style="text-align:center"><em>(Alt+166)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+0</td>
+<td>Masculine Ordinal Indicator</td>
+<td style="text-align:center"><code>{U+00BA}</code></td>
+<td style="text-align:center"><em>(Alt+167)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+-</td>
+<td>En Dash punctuation mark</td>
+<td style="text-align:center"><code>{U+2013}</code></td>
+<td style="text-align:center"><em>(Alt+0150)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+=</td>
+<td>Not Equal To symbol</td>
+<td style="text-align:center"><code>{U+2260}</code></td>
+<td style="text-align:center"><em>n/a</em></td>
+</tr>
+</tbody>
+</table>
+<p>† See Appendix.</p>
+<div style="page-break-after : always; visibility : hidden">  
+\pagebreak </div>
+<h2 id="%C2%A7-numbers-row-with-shiftoption">§ Numbers row with <em>Shift+Option</em>:</h2>
+<pre><code>   NoMod: `   1   2   3   4   5   6   7   8   9   0   -   =
+   Shift: ~   !   @   #   $   %   ^   &amp;   *   (   )   _   +  
+  Sh+Opt: `   ⁄   €   ‹   ›   †    ̂   ‡   °   ·   ‚   —   ±  
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">–– Keys ––</th>
+<th>–––––––––––––– Description –––––––––––––––</th>
+<th style="text-align:center">–– Unicode ––</th>
+<th style="text-align:center">–– Alt Code ––</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">⇧+Opt+`</td>
+<td>Combining Grave Accent</td>
+<td style="text-align:center"><code>{U+0300}</code></td>
+<td style="text-align:center"><em>n/a</em></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+1</td>
+<td>Fraction Slash</td>
+<td style="text-align:center"><code>{U+2044}</code></td>
+<td style="text-align:center"><em>n/a</em></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+2</td>
+<td>Euro currency symbol</td>
+<td style="text-align:center"><code>{U+20AC}</code></td>
+<td style="text-align:center"><em>(Alt+0128)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+3</td>
+<td>Single Left-Pointing Angle Quotation mark</td>
+<td style="text-align:center"><code>{U+2039}</code></td>
+<td style="text-align:center"><em>(Alt+0139)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+4</td>
+<td>Single Right-Pointing Angle Quotation mark</td>
+<td style="text-align:center"><code>{U+203A}</code></td>
+<td style="text-align:center"><em>(Alt+0155)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+5</td>
+<td>Simple dagger (cross) symbol</td>
+<td style="text-align:center"><code>{U+2020}</code></td>
+<td style="text-align:center"><em>(Alt+0134)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+6</td>
+<td>Combining Circumflex Accent</td>
+<td style="text-align:center"><code>{U+0302}</code></td>
+<td style="text-align:center"><em>n/a</em></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+7</td>
+<td>Double dagger (cross) symbol</td>
+<td style="text-align:center"><code>{U+2021}</code></td>
+<td style="text-align:center"><em>(Alt+0135)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+8</td>
+<td>Degree Sign</td>
+<td style="text-align:center"><code>{U+00B0}</code></td>
+<td style="text-align:center"><em>(Alt+248)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+9</td>
+<td>Middle Dot (interpunct/middot)</td>
+<td style="text-align:center"><code>{U+00B7}</code></td>
+<td style="text-align:center"><em>(Alt+250)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+0</td>
+<td>Single low-9 quotation mark</td>
+<td style="text-align:center"><code>{U+201A}</code></td>
+<td style="text-align:center"><em>(Alt+0130)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+-</td>
+<td>Em Dash punctuation mark</td>
+<td style="text-align:center"><code>{U+2014}</code></td>
+<td style="text-align:center"><em>(Alt+0151)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+=</td>
+<td>Plus Minus mathematical symbol</td>
+<td style="text-align:center"><code>{U+00B1}</code></td>
+<td style="text-align:center"><em>(Alt+241)</em></td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after : always; visibility : hidden"> 
+\pagebreak </div>
+<h2 id="%C2%A7-tab-key-row-with-option">§ Tab key row with <em>Option</em>:</h2>
+<pre><code> NoMod: q   w   e   r   t   y   u   i   o   p   [   ]   \  
+Option: œ  (˙) (´)  ®   þ   ¥  (¨) (ˆ)  ø  (,)  “   ‘   «  
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">–– Keys ––</th>
+<th>–––––––––––––– Description –––––––––––––––</th>
+<th style="text-align:center">–– Unicode ––</th>
+<th style="text-align:center">–– Alt Code ––</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Opt+Q</td>
+<td>Small oe (oethel) ligature</td>
+<td style="text-align:center"><code>{U+0153}</code></td>
+<td style="text-align:center"><em>(Alt+0156)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+W</td>
+<td><strong><em>(Dead Key: Dot Above)†</em></strong></td>
+<td style="text-align:center"><code>{U+02D9}</code></td>
+<td style="text-align:center"><em>n/a</em></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+E</td>
+<td><strong><em>(Dead Key: Acute Accent)†</em></strong></td>
+<td style="text-align:center"><code>{U+00B4}</code></td>
+<td style="text-align:center"><em>(Alt+0180)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+R</td>
+<td>Registered Trade Mark Sign</td>
+<td style="text-align:center"><code>{U+00AE}</code></td>
+<td style="text-align:center"><em>(Alt+0174)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+T</td>
+<td>Latin Small Letter Thorn</td>
+<td style="text-align:center"><code>{U+00FE}</code></td>
+<td style="text-align:center"><em>(Alt+0254)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+Y</td>
+<td>Japanese Yen currency symbol</td>
+<td style="text-align:center"><code>{U+00A5}</code></td>
+<td style="text-align:center"><em>(Alt+157)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+U</td>
+<td><strong><em>(Dead Key: Umlaut/Diaeresis)†</em></strong></td>
+<td style="text-align:center"><code>{U+00A8}</code></td>
+<td style="text-align:center"><em>(Alt+0168)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+I</td>
+<td><strong><em>(Dead Key: Apostrophe/Horn)†</em></strong></td>
+<td style="text-align:center"><code>{U+02BC}</code></td>
+<td style="text-align:center"><em>n/a</em></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+O</td>
+<td>Latin Small Letter o with Stroke</td>
+<td style="text-align:center"><code>{U+00D8}</code></td>
+<td style="text-align:center"><em>(Alt+0216)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+P</td>
+<td><strong><em>(Dead Key: Comma Below)†</em></strong></td>
+<td style="text-align:center"><code>{U+002C}</code></td>
+<td style="text-align:center"><em>(Alt+44)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+[</td>
+<td>Left Double Quotation Mark</td>
+<td style="text-align:center"><code>{U+201C}</code></td>
+<td style="text-align:center"><em>(Alt+0147)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+]</td>
+<td>Left Single Quotation Mark</td>
+<td style="text-align:center"><code>{U+2018}</code></td>
+<td style="text-align:center"><em>(Alt+0145)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+\</td>
+<td>Left-Pointing Double Angle Quotation Mark</td>
+<td style="text-align:center"><code>{U+00AB}</code></td>
+<td style="text-align:center"><em>(Alt+174)</em></td>
+</tr>
+</tbody>
+</table>
+<p>† See Appendix.</p>
+<div style="page-break-after : always; visibility : hidden"> 
+\pagebreak </div>
+<h2 id="%C2%A7-tab-key-row-with-shiftoption">§ Tab key row with <em>Shift+Option</em>:</h2>
+<pre><code>   Shift: Q   W   E   R   T   Y   U   I   O   P   {   }   |  
+  Sh+Opt: Œ   ˙   ´   ‰   Þ  ( ̏ ) ¨   ʼ   Ø   ,   ”   ’   »  
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">–– Keys ––</th>
+<th>–––––––––––––– Description –––––––––––––––</th>
+<th style="text-align:center">–– Unicode ––</th>
+<th style="text-align:center">–– Alt Code ––</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">⇧+Opt+Q</td>
+<td>Capital OE (Oethel) ligature</td>
+<td style="text-align:center"><code>{U+0152}</code></td>
+<td style="text-align:center"><em>(Alt+0140)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+W</td>
+<td>Combining Dot Above</td>
+<td style="text-align:center"><code>{U+0307}</code></td>
+<td style="text-align:center"><em>n/a</em></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+E</td>
+<td>Combining Acute Accent</td>
+<td style="text-align:center"><code>{U+0301}</code></td>
+<td style="text-align:center"><em>n/a</em></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+R</td>
+<td>Per mille symbol (zero over zero-zero)</td>
+<td style="text-align:center"><code>{U+2030}</code></td>
+<td style="text-align:center"><em>(Alt+0137)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+T</td>
+<td>Latin Capital Letter Thorn</td>
+<td style="text-align:center"><code>{U+00DE}</code></td>
+<td style="text-align:center"><em>(Alt+0222)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+Y</td>
+<td><strong><em>(Dead Key: Comb. Double Grave)†</em></strong></td>
+<td style="text-align:center"><code>{U+030F}</code></td>
+<td style="text-align:center"><em>n/a</em></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+U</td>
+<td>Combining Diaeresis/Umlaut</td>
+<td style="text-align:center"><code>{U+0308}</code></td>
+<td style="text-align:center"><em>n/a</em></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+I</td>
+<td>Combining Horn (Apostrophe)</td>
+<td style="text-align:center"><code>{U+031B}</code></td>
+<td style="text-align:center"><em>n/a</em></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+O</td>
+<td>Latin Capital Letter O with Stroke</td>
+<td style="text-align:center"><code>{U+00D8}</code></td>
+<td style="text-align:center"><em>(Alt+0216)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+P</td>
+<td>Combining Comma Below</td>
+<td style="text-align:center"><code>{U+0326}</code></td>
+<td style="text-align:center"><em>n/a</em></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+[</td>
+<td>Right Double Quotation Mark</td>
+<td style="text-align:center"><code>{U+201D}</code></td>
+<td style="text-align:center"><em>(Alt+0148)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+]</td>
+<td>Right Single Quotation Mark</td>
+<td style="text-align:center"><code>{U+2019}</code></td>
+<td style="text-align:center"><em>(Alt+0146)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+\</td>
+<td>Right-Pointing Double Angle Quotation Mark</td>
+<td style="text-align:center"><code>{U+00BB}</code></td>
+<td style="text-align:center"><em>(Alt+175)</em></td>
+</tr>
+</tbody>
+</table>
+<p>† See Appendix.</p>
+<div style="page-break-after : always; visibility : hidden"> 
+\pagebreak </div>
+<h2 id="%C2%A7-caps-lock-row-with-option">§ Caps Lock row with <em>Option</em>:</h2>
+<pre><code> NoMod:  a   s   d   f   g   h   j   k   l   ;   '  
+Option: (¯)  ß   ð   ƒ   ©  (ˍ) (˝) (˚) (-)  …   æ  
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">–– Keys ––</th>
+<th>–––––––––––––– Description –––––––––––––––</th>
+<th style="text-align:center">–– Unicode ––</th>
+<th style="text-align:center">–– Alt Code ––</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Opt+A</td>
+<td><strong><em>(Dead Key: Macron/Line Above)†</em></strong></td>
+<td style="text-align:center"><code>{U+00AF}</code></td>
+<td style="text-align:center"><em>(Alt+0175)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+S</td>
+<td>Eszett/beta (Sharfes/Sharp S)</td>
+<td style="text-align:center"><code>{U+00DF}</code></td>
+<td style="text-align:center"><em>(Alt+225)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+D</td>
+<td>Latin Small Letter Eth</td>
+<td style="text-align:center"><code>{U+00F0}</code></td>
+<td style="text-align:center"><em>(Alt+0240)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+F</td>
+<td>Function/florin currency symbol</td>
+<td style="text-align:center"><code>{U+0192}</code></td>
+<td style="text-align:center"><em>(Alt+159)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+G</td>
+<td>Copyright Sign</td>
+<td style="text-align:center"><code>{U+00A9}</code></td>
+<td style="text-align:center"><em>(Alt+0169)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+H</td>
+<td><strong><em>(Dead Key: Macron Below)†</em></strong></td>
+<td style="text-align:center"><code>{U+02CD}</code></td>
+<td style="text-align:center"><em>n/a</em></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+J</td>
+<td><strong><em>(Dead Key: Double Acute Accent)†</em></strong></td>
+<td style="text-align:center"><code>{U+02DD}</code></td>
+<td style="text-align:center"><em>n/a</em></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+K</td>
+<td><strong><em>(Dead Key: Ring Above)†</em></strong></td>
+<td style="text-align:center"><code>{U+02DA}</code></td>
+<td style="text-align:center"><em>n/a</em></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+L</td>
+<td><strong><em>(Dead Key: Stroke/Hyphen-Minus)†</em></strong></td>
+<td style="text-align:center"><code>{U+002D}</code></td>
+<td style="text-align:center"><em>(Alt+45)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+;</td>
+<td>Horizontal ellipsis</td>
+<td style="text-align:center"><code>{U+2026}</code></td>
+<td style="text-align:center"><em>(Alt+0133)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+'</td>
+<td>Small ae ligature</td>
+<td style="text-align:center"><code>{U+00E6}</code></td>
+<td style="text-align:center"><em>(Alt+130)</em></td>
+</tr>
+</tbody>
+</table>
+<p>† See Appendix.</p>
+<div style="page-break-after : always; visibility : hidden"> 
+\pagebreak </div>
+<h2 id="%C2%A7-caps-lock-row-with-shiftoption">§ Caps Lock row with <em>Shift+Option</em>:</h2>
+<pre><code> Shift: A   S   D   F   G   H   J   K   L   :   &quot;  
+Sh+Opt: ̄  ( ̑ )  Ð  (˷) (‸)   ̱    ̋    ̊    ̵  (№)   Æ  
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">–– Keys ––</th>
+<th>–––––––––––––– Description –––––––––––––––</th>
+<th style="text-align:center">–– Unicode ––</th>
+<th style="text-align:center">–– Alt Code ––</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">⇧+Opt+A</td>
+<td>Combining Macron (line above)</td>
+<td style="text-align:center"><code>{U+0304}</code></td>
+<td style="text-align:center"><em>n/a</em></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+S</td>
+<td><strong><em>(Dead Key: Comb. Inverted Breve)†</em></strong></td>
+<td style="text-align:center"><code>{U+0311}</code></td>
+<td style="text-align:center"><em>n/a</em></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+D</td>
+<td>Latin Capital Letter Eth</td>
+<td style="text-align:center"><code>{U+00D0}</code></td>
+<td style="text-align:center"><em>(Alt+0208)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+F</td>
+<td><strong><em>(Dead Key: Comb. Tilde Below)†</em></strong></td>
+<td style="text-align:center"><code>{U+0330}</code></td>
+<td style="text-align:center"><em>n/a</em></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+G</td>
+<td><strong><em>(Dead Key: Caret/Circumflex Below)†</em></strong></td>
+<td style="text-align:center"><code>{U+2038}</code></td>
+<td style="text-align:center"><em>n/a</em></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+H</td>
+<td>Combining Macron Below (line below)</td>
+<td style="text-align:center"><code>{U+0331}</code></td>
+<td style="text-align:center"><em>n/a</em></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+J</td>
+<td>Combining Double Acute Accent</td>
+<td style="text-align:center"><code>{U+030B}</code></td>
+<td style="text-align:center"><em>n/a</em></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+K</td>
+<td>Combining Ring Above</td>
+<td style="text-align:center"><code>{U+030A}</code></td>
+<td style="text-align:center"><em>n/a</em></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+L</td>
+<td>Combining Short Stroke Overlay</td>
+<td style="text-align:center"><code>{U+0335}</code></td>
+<td style="text-align:center"><em>n/a</em></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+;</td>
+<td><strong><em>(Dead Key: Numero Sign)†</em></strong></td>
+<td style="text-align:center"><code>{U+00DA}</code></td>
+<td style="text-align:center"><em>n/a</em></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+'</td>
+<td>Capital AE ligature</td>
+<td style="text-align:center"><code>{U+00C6}</code></td>
+<td style="text-align:center"><em>(Alt+146)</em></td>
+</tr>
+</tbody>
+</table>
+<p>† See Appendix.</p>
+<div style="page-break-after : always; visibility : hidden"> 
+\pagebreak </div>
+<h2 id="%C2%A7-shift-keys-row-with-option">§ Shift keys row with <em>Option</em>:</h2>
+<pre><code> NoMod:  z   x   c   v   b   n   m   ,   .   /  
+Option: (ˀ) (.) (¸) (ˇ) (˘) (˜) (˛)  ≤   ≥   ÷  
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">–– Keys ––</th>
+<th>–––––––––––––– Description –––––––––––––––</th>
+<th style="text-align:center">–– Unicode ––</th>
+<th style="text-align:center">–– Alt Code ––</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Opt+Z</td>
+<td><strong><em>(Dead Key: Hook Above/Glottal Stop)†</em></strong></td>
+<td style="text-align:center"><code>{U+02C0}</code></td>
+<td style="text-align:center"><em>n/a</em></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+X</td>
+<td><strong><em>(Dead Key: Dot Below)†</em></strong></td>
+<td style="text-align:center"><code>{U+002E}</code></td>
+<td style="text-align:center"><em>n/a</em></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+C</td>
+<td><strong><em>(Dead Key: Cedilla/Cedille)†</em></strong></td>
+<td style="text-align:center"><code>{U+00B8}</code></td>
+<td style="text-align:center"><em>n/a</em></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+V</td>
+<td><strong><em>(Dead Key: Caron/hacek)†</em></strong></td>
+<td style="text-align:center"><code>{U+02C7}</code></td>
+<td style="text-align:center"><em>n/a</em></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+B</td>
+<td><strong><em>(Dead Key: Breve)†</em></strong></td>
+<td style="text-align:center"><code>{U+02D8}</code></td>
+<td style="text-align:center"><em>n/a</em></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+N</td>
+<td><strong><em>(Dead Key: Tilde)†</em></strong></td>
+<td style="text-align:center"><code>{U+02DC}</code></td>
+<td style="text-align:center"><em>n/a</em></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+M</td>
+<td><strong><em>(Dead Key: Ogonek)†</em></strong></td>
+<td style="text-align:center"><code>{U+02DB}</code></td>
+<td style="text-align:center"><em>n/a</em></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+,</td>
+<td>Less Than or Equal To symbol</td>
+<td style="text-align:center"><code>{U+2264}</code></td>
+<td style="text-align:center"><em>(Alt+243)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+.</td>
+<td>Greater Than or Equal To symbol</td>
+<td style="text-align:center"><code>{U+2265}</code></td>
+<td style="text-align:center"><em>(Alt+242)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+/</td>
+<td>Obelus/Division symbol</td>
+<td style="text-align:center"><code>{U+00F7}</code></td>
+<td style="text-align:center"><em>(Alt+246)</em></td>
+</tr>
+</tbody>
+</table>
+<p>† See Appendix.</p>
+<div style="page-break-after : always; visibility : hidden"> 
+\pagebreak </div>
+<h2 id="%C2%A7-shift-keys-row-with-shiftoption">§ Shift keys row with <em>Shift+Option</em>:</h2>
+<pre><code> Shift: Z   X   C   V   B   N   M   &lt;   &gt;   ?  
+Sh+Opt: ̉    ̣     ̧    ̌    ̆    ̃    ̨   „   ʔ   ¿  
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">–– Keys ––</th>
+<th>–––––––––––––– Description –––––––––––––––</th>
+<th style="text-align:center">–– Unicode ––</th>
+<th style="text-align:center">–– Alt Code ––</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">⇧+Opt+Z</td>
+<td>Combining Hook Above (hoi)</td>
+<td style="text-align:center"><code>{U+0309}</code></td>
+<td style="text-align:center"><em>n/a</em></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+X</td>
+<td>Combining Dot Below (nang)</td>
+<td style="text-align:center"><code>{U+0323}</code></td>
+<td style="text-align:center"><em>n/a</em></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+C</td>
+<td>Combining Cedilla</td>
+<td style="text-align:center"><code>{U+0327}</code></td>
+<td style="text-align:center"><em>n/a</em></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+V</td>
+<td>Combining Caron (hacek, v above)</td>
+<td style="text-align:center"><code>{U+030C}</code></td>
+<td style="text-align:center"><em>n/a</em></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+B</td>
+<td>Combining Breve</td>
+<td style="text-align:center"><code>{U+0306}</code></td>
+<td style="text-align:center"><em>n/a</em></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+N</td>
+<td>Combining Tilde</td>
+<td style="text-align:center"><code>{U+0303}</code></td>
+<td style="text-align:center"><em>n/a</em></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+M</td>
+<td>Combining Ogonek (nasal hook)</td>
+<td style="text-align:center"><code>{U+0328}</code></td>
+<td style="text-align:center"><em>n/a</em></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+,</td>
+<td>Double Low-9 Quotation mark</td>
+<td style="text-align:center"><code>{U+201E}</code></td>
+<td style="text-align:center"><em>(Alt+0132)</em></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+.</td>
+<td>Latin Letter Glottal Stop (hook)</td>
+<td style="text-align:center"><code>{U+0294}</code></td>
+<td style="text-align:center"><em>n/a</em></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+/</td>
+<td>Inverted (turned) Question Mark</td>
+<td style="text-align:center"><code>{U+00BF}</code></td>
+<td style="text-align:center"><em>(Alt+168)</em></td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after : always; visibility : hidden"> 
+\pagebreak </div>
+<h1 id="appendix-dead-keys-characters">Appendix: Dead Keys Characters</h1>
+<p>Sections here are arranged in QWERTY order, from top-left key (Grave/backtick key) on a standard US keyboard layout. Left to right, then next row down, etc. There are a total of 25 dead keys on the <strong>ABC Extended</strong> keyboard layout, giving access to 489 special characters.</p>
+<pre><code>Grave Accent ................ [Option+Grave]
+Circumflex Accent ........... [Option+6]
+
+Dot Above ................... [Option+W]
+Acute Accent ................ [Option+E]
+Combining Double Grave ...... [Shift+Option+Y]
+Umlaut/Diaeresis ............ [Option+U]
+Apostrophe/Horn ............. [Option+I]
+Comma Below ................. [Option+P]
+
+Macron/Line Above ........... [Option+A]
+Combining Inverted Breve .... [Shift+Option+S]
+Combining Tilde Below ....... [Shift+Option+F]
+Caret/Circumflex Below ...... [Shift+Option+G]
+Low Macron/Line Below ....... [Option+H]
+Double Acute Accent ......... [Option+J]
+Ring Above .................. [Option+K]
+Stroke/Hyphen-Minus ......... [Option+L]
+Numero Sign ................. [Shift+Option+Semicolon]
+
+Hook Above/Glottal Stop ..... [Option+Z]
+Dot Below ................... [Option+X]
+Cedilla/Cedille ............. [Option+C]
+Caron/hacek ................. [Option+V]
+Breve ....................... [Option+B]
+Tilde ....................... [Option+N]
+Ogonek ...................... [Option+M]
+Hook ........................ [Option+Dot] 
+</code></pre>
+<div style="page-break-after : always; visibility : hidden"> 
+\pagebreak </div>
+<h2 id="%C2%A7-dead-key-grave-accent">§ Dead Key: Grave Accent [ ` ]</h2>
+<p>Option+` (Grave), then key or Shift+key. {U+0060}</p>
+<pre><code>  Key: a e i n o u v w y  
+Lower: à è ì ǹ ò ù ǜ ẁ ỳ  
+Upper: À È Ì Ǹ Ò Ù Ǜ Ẁ Ỳ  
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">–– Keys ––</th>
+<th>–––––––––––––––– Description –––––––––––––––––</th>
+<th style="text-align:center">–– Unicode ––</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Opt+`, a</td>
+<td>Latin Small A with Grave</td>
+<td style="text-align:center"><code>{U+00E0}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+`, e</td>
+<td>Latin Small E with Grave</td>
+<td style="text-align:center"><code>{U+00E8}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+`, i</td>
+<td>Latin Small I with Grave</td>
+<td style="text-align:center"><code>{U+00EC}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+`, n</td>
+<td>Latin Small N with Grave</td>
+<td style="text-align:center"><code>{U+01F9}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+`, o</td>
+<td>Latin Small O with Grave</td>
+<td style="text-align:center"><code>{U+00F2}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+`, u</td>
+<td>Latin Small U with Grave</td>
+<td style="text-align:center"><code>{U+00F9}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+`, v</td>
+<td>Latin Small V with Grave</td>
+<td style="text-align:center"><code>{U+01DC}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+`, w</td>
+<td>Latin Small W with Grave</td>
+<td style="text-align:center"><code>{U+1E81}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+`, y</td>
+<td>Latin Small Y with Grave</td>
+<td style="text-align:center"><code>{U+1EF3}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+`, A</td>
+<td>Latin Capital A with Grave</td>
+<td style="text-align:center"><code>{U+00C0}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+`, E</td>
+<td>Latin Capital E with Grave</td>
+<td style="text-align:center"><code>{U+00C8}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+`, I</td>
+<td>Latin Capital I with Grave</td>
+<td style="text-align:center"><code>{U+00CC}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+`, N</td>
+<td>Latin Capital N with Grave</td>
+<td style="text-align:center"><code>{U+01F8}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+`, O</td>
+<td>Latin Capital O with Grave</td>
+<td style="text-align:center"><code>{U+00D2}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+`, U</td>
+<td>Latin Capital U with Grave</td>
+<td style="text-align:center"><code>{U+00D9}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+`, V</td>
+<td>Latin Capital V with Grave</td>
+<td style="text-align:center"><code>{U+01DB}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+`, W</td>
+<td>Latin Capital W with Grave</td>
+<td style="text-align:center"><code>{U+1E80}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+`, Y</td>
+<td>Latin Capital Y with Grave</td>
+<td style="text-align:center"><code>{U+1EF2}</code></td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after : always; visibility : hidden"> 
+\pagebreak </div>
+<h2 id="%C2%A7-dead-key-circumflex-accent--%CB%86--1-of-2-lowercase">§ Dead Key: Circumflex Accent [ ˆ ] (1 of 2: Lowercase)</h2>
+<p>Option+6, then key or Shift+key. {U+02C6}</p>
+<pre><code>  Key: a c e g h i j m n o s u w y z  
+Lower: â ĉ ê ĝ ĥ î ĵ m̂ n̂ ô ŝ û ŵ ŷ ẑ  
+Upper: Â Ĉ Ê Ĝ Ĥ Î Ĵ M̂ N̂ Ô Ŝ Û Ŵ Ŷ Ẑ  
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">–– Keys ––</th>
+<th>–––––––––––––––– Description –––––––––––––––––</th>
+<th style="text-align:center">–– Unicode ––</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Opt+6, a</td>
+<td>Latin Small Letter A with Circumflex</td>
+<td style="text-align:center"><code>{U+00E2}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+6, c</td>
+<td>Latin Small Letter C with Circumflex</td>
+<td style="text-align:center"><code>{U+0109}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+6, e</td>
+<td>Latin Small Letter E with Circumflex</td>
+<td style="text-align:center"><code>{U+00EA}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+6, g</td>
+<td>Latin Small Letter G with Circumflex</td>
+<td style="text-align:center"><code>{U+011D}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+6, h</td>
+<td>Latin Small Letter H with Circumflex</td>
+<td style="text-align:center"><code>{U+0125}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+6, i</td>
+<td>Latin Small Letter I with Circumflex</td>
+<td style="text-align:center"><code>{U+00EE}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+6, j</td>
+<td>Latin Small Letter J with Circumflex</td>
+<td style="text-align:center"><code>{U+0135}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+6, m</td>
+<td>Latin Small Letter M with Circumflex</td>
+<td style="text-align:center"><code>{U+006D}</code>†</td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+6, n</td>
+<td>Latin Small Letter N with Circumflex</td>
+<td style="text-align:center"><code>{U+006E}</code>†</td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+6, o</td>
+<td>Latin Small Letter O with Circumflex</td>
+<td style="text-align:center"><code>{U+00F4}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+6, s</td>
+<td>Latin Small Letter S with Circumflex</td>
+<td style="text-align:center"><code>{U+015D}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+6, u</td>
+<td>Latin Small Letter U with Circumflex</td>
+<td style="text-align:center"><code>{U+00FB}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+6, w</td>
+<td>Latin Small Letter W with Circumflex</td>
+<td style="text-align:center"><code>{U+0175}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+6, y</td>
+<td>Latin Small Letter Y with Circumflex</td>
+<td style="text-align:center"><code>{U+0177}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+6, z</td>
+<td>Latin Small Letter Z with Circumflex</td>
+<td style="text-align:center"><code>{U+1E91}</code></td>
+</tr>
+</tbody>
+</table>
+<p>† Unaccented character, must combine with Combining Circumflex Accent {U+0302}.</p>
+<div style="page-break-after : always; visibility : hidden"> 
+\pagebreak </div>
+<h2 id="%C2%A7-dead-key-circumflex-accent--%CB%86--2-of-2-uppercase">§ Dead Key: Circumflex Accent [ ˆ ] (2 of 2: Uppercase)</h2>
+<p>Option+6, then key or Shift+key. {U+02C6}</p>
+<pre><code>  Key: a c e g h i j m n o s u w y z  
+Lower: â ĉ ê ĝ ĥ î ĵ m̂ n̂ ô ŝ û ŵ ŷ ẑ  
+Upper: Â Ĉ Ê Ĝ Ĥ Î Ĵ M̂ N̂ Ô Ŝ Û Ŵ Ŷ Ẑ  
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">–– Keys ––</th>
+<th>–––––––––––––––– Description –––––––––––––––––</th>
+<th style="text-align:center">–– Unicode ––</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Opt+6, A</td>
+<td>Latin Capital Letter A with Circumflex</td>
+<td style="text-align:center"><code>{U+00C2}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+6, C</td>
+<td>Latin Capital Letter C with Circumflex</td>
+<td style="text-align:center"><code>{U+0108}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+6, E</td>
+<td>Latin Capital Letter E with Circumflex</td>
+<td style="text-align:center"><code>{U+00CA}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+6, G</td>
+<td>Latin Capital Letter G with Circumflex</td>
+<td style="text-align:center"><code>{U+011C}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+6, H</td>
+<td>Latin Capital Letter H with Circumflex</td>
+<td style="text-align:center"><code>{U+0124}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+6, I</td>
+<td>Latin Capital Letter I with Circumflex</td>
+<td style="text-align:center"><code>{U+00CE}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+6, J</td>
+<td>Latin Capital Letter J with Circumflex</td>
+<td style="text-align:center"><code>{U+0134}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+6, M</td>
+<td>Latin Capital Letter M with Circumflex</td>
+<td style="text-align:center"><code>{U+004D}</code>†</td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+6, N</td>
+<td>Latin Capital Letter N with Circumflex</td>
+<td style="text-align:center"><code>{U+004E}</code>†</td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+6, O</td>
+<td>Latin Capital Letter O with Circumflex</td>
+<td style="text-align:center"><code>{U+00D4}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+6, S</td>
+<td>Latin Capital Letter S with Circumflex</td>
+<td style="text-align:center"><code>{U+015C}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+6, U</td>
+<td>Latin Capital Letter U with Circumflex</td>
+<td style="text-align:center"><code>{U+00DB}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+6, W</td>
+<td>Latin Capital Letter W with Circumflex</td>
+<td style="text-align:center"><code>{U+0174}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+6, Y</td>
+<td>Latin Capital Letter Y with Circumflex</td>
+<td style="text-align:center"><code>{U+0176}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+6, Z</td>
+<td>Latin Capital Letter Z with Circumflex</td>
+<td style="text-align:center"><code>{U+1E90}</code></td>
+</tr>
+</tbody>
+</table>
+<p>† Unaccented character, must combine with Combining Circumflex Accent {U+0302}.</p>
+<div style="page-break-after : always; visibility : hidden"> 
+\pagebreak </div>
+<h2 id="%C2%A7-dead-key-dot-above--%CB%99--1-of-2-lowercase">§ Dead Key: Dot Above [ ˙ ] (1 of 2: Lowercase)</h2>
+<p>Option+W, then key or Shift+key. {U+02D9}</p>
+<pre><code>  Key: a b c d e f g h i m n o p r s t w x y z  
+Lower: ȧ ḃ ċ ḋ ė ḟ ġ ḣ ı ṁ ṅ ȯ ṗ ṙ ṡ ṫ ẇ ẋ ẏ ż  
+Upper: Ȧ Ḃ Ċ Ḋ Ė Ḟ Ġ Ḣ İ Ṁ Ṅ Ȯ Ṗ Ṙ Ṡ Ṫ Ẇ Ẋ Ẏ Ż  
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">–– Keys ––</th>
+<th>–––––––––––––––– Description –––––––––––––––––</th>
+<th style="text-align:center">–– Unicode ––</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Opt+W, a</td>
+<td>Latin Small Letter A with Dot Above</td>
+<td style="text-align:center"><code>{U+0227}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+W, b</td>
+<td>Latin Small Letter B with Dot Above</td>
+<td style="text-align:center"><code>{U+1E03}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+W, c</td>
+<td>Latin Small Letter C with Dot Above</td>
+<td style="text-align:center"><code>{U+010B}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+W, d</td>
+<td>Latin Small Letter D with Dot Above</td>
+<td style="text-align:center"><code>{U+1E0B}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+W, e</td>
+<td>Latin Small Letter E with Dot Above</td>
+<td style="text-align:center"><code>{U+0117}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+W, f</td>
+<td>Latin Small Letter F with Dot Above</td>
+<td style="text-align:center"><code>{U+1E1F}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+W, g</td>
+<td>Latin Small Letter G with Dot Above</td>
+<td style="text-align:center"><code>{U+0121}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+W, h</td>
+<td>Latin Small Letter H with Dot Above</td>
+<td style="text-align:center"><code>{U+1E23}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+W, i</td>
+<td>Latin Small Letter I with Dot Above</td>
+<td style="text-align:center"><code>{U+0131}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+W, m</td>
+<td>Latin Small Letter M with Dot Above</td>
+<td style="text-align:center"><code>{U+1E41}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+W, n</td>
+<td>Latin Small Letter N with Dot Above</td>
+<td style="text-align:center"><code>{U+1E45}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+W, o</td>
+<td>Latin Small Letter O with Dot Above</td>
+<td style="text-align:center"><code>{U+022F}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+W, p</td>
+<td>Latin Small Letter P with Dot Above</td>
+<td style="text-align:center"><code>{U+1E57}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+W, r</td>
+<td>Latin Small Letter R with Dot Above</td>
+<td style="text-align:center"><code>{U+1E59}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+W, s</td>
+<td>Latin Small Letter S with Dot Above</td>
+<td style="text-align:center"><code>{U+1E61}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+W, t</td>
+<td>Latin Small Letter T with Dot Above</td>
+<td style="text-align:center"><code>{U+1E6B}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+W, w</td>
+<td>Latin Small Letter W with Dot Above</td>
+<td style="text-align:center"><code>{U+1E87}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+W, x</td>
+<td>Latin Small Letter X with Dot Above</td>
+<td style="text-align:center"><code>{U+1E8B}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+W, y</td>
+<td>Latin Small Letter Y with Dot Above</td>
+<td style="text-align:center"><code>{U+1E8F}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+W, z</td>
+<td>Latin Small Letter Z with Dot Above</td>
+<td style="text-align:center"><code>{U+017C}</code></td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after : always; visibility : hidden"> 
+\pagebreak </div>
+<h2 id="%C2%A7-dead-key-dot-above--%CB%99--2-of-2-uppercase">§ Dead Key: Dot Above [ ˙ ] (2 of 2: Uppercase)</h2>
+<p>Option+W, then key or Shift+key. {U+02D9}</p>
+<pre><code>  Key: a b c d e f g h i m n o p r s t w x y z  
+Lower: ȧ ḃ ċ ḋ ė ḟ ġ ḣ ı ṁ ṅ ȯ ṗ ṙ ṡ ṫ ẇ ẋ ẏ ż  
+Upper: Ȧ Ḃ Ċ Ḋ Ė Ḟ Ġ Ḣ İ Ṁ Ṅ Ȯ Ṗ Ṙ Ṡ Ṫ Ẇ Ẋ Ẏ Ż  
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">–– Keys ––</th>
+<th>–––––––––––––––– Description –––––––––––––––––</th>
+<th style="text-align:center">–– Unicode ––</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Opt+W, A</td>
+<td>Latin Capital Letter A with Dot Above</td>
+<td style="text-align:center"><code>{U+0226}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+W, B</td>
+<td>Latin Capital Letter B with Dot Above</td>
+<td style="text-align:center"><code>{U+1E02}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+W, C</td>
+<td>Latin Capital Letter C with Dot Above</td>
+<td style="text-align:center"><code>{U+010A}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+W, D</td>
+<td>Latin Capital Letter D with Dot Above</td>
+<td style="text-align:center"><code>{U+1E0A}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+W, E</td>
+<td>Latin Capital Letter E with Dot Above</td>
+<td style="text-align:center"><code>{U+0116}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+W, F</td>
+<td>Latin Capital Letter F with Dot Above</td>
+<td style="text-align:center"><code>{U+1E1E}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+W, G</td>
+<td>Latin Capital Letter G with Dot Above</td>
+<td style="text-align:center"><code>{U+0120}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+W, H</td>
+<td>Latin Capital Letter H with Dot Above</td>
+<td style="text-align:center"><code>{U+1E22}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+W, I</td>
+<td>Latin Capital Letter I with Dot Above</td>
+<td style="text-align:center"><code>{U+0130}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+W, M</td>
+<td>Latin Capital Letter M with Dot Above</td>
+<td style="text-align:center"><code>{U+1E40}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+W, N</td>
+<td>Latin Capital Letter N with Dot Above</td>
+<td style="text-align:center"><code>{U+1E44}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+W, O</td>
+<td>Latin Capital Letter O with Dot Above</td>
+<td style="text-align:center"><code>{U+022E}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+W, P</td>
+<td>Latin Capital Letter P with Dot Above</td>
+<td style="text-align:center"><code>{U+1E56}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+W, R</td>
+<td>Latin Capital Letter R with Dot Above</td>
+<td style="text-align:center"><code>{U+1E58}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+W, S</td>
+<td>Latin Capital Letter S with Dot Above</td>
+<td style="text-align:center"><code>{U+1E60}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+W, T</td>
+<td>Latin Capital Letter T with Dot Above</td>
+<td style="text-align:center"><code>{U+1E6A}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+W, W</td>
+<td>Latin Capital Letter W with Dot Above</td>
+<td style="text-align:center"><code>{U+1E86}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+W, X</td>
+<td>Latin Capital Letter X with Dot Above</td>
+<td style="text-align:center"><code>{U+1E8A}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+W, Y</td>
+<td>Latin Capital Letter Y with Dot Above</td>
+<td style="text-align:center"><code>{U+1E8E}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+W, Z</td>
+<td>Latin Capital Letter Z with Dot Above</td>
+<td style="text-align:center"><code>{U+017B}</code></td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after : always; visibility : hidden"> 
+\pagebreak </div>
+<h2 id="%C2%A7-dead-key-acute-accent--%C2%B4--1-of-2-lowercase">§ Dead Key: Acute Accent [ ´ ] (1 of 2: Lowercase)</h2>
+<p>Option+E, then key or Shift+key. {U+00B4}</p>
+<pre><code>  Key: a c e g i m n o p r s w y z  
+Lower: á ć é ǵ í ḿ ń ó ṕ ŕ ś ẃ ý ź  
+Upper: Á Ć É Ǵ Í Ḿ Ń Ó Ṕ Ŕ Ś Ẃ Ý Ź  
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">–– Keys ––</th>
+<th>–––––––––––––––– Description –––––––––––––––––</th>
+<th style="text-align:center">–– Unicode ––</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Opt+E, a</td>
+<td>Latin Small Letter A with Acute</td>
+<td style="text-align:center"><code>{U+00E1}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+E, c</td>
+<td>Latin Small Letter C with Acute</td>
+<td style="text-align:center"><code>{U+0107}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+E, e</td>
+<td>Latin Small Letter E with Acute</td>
+<td style="text-align:center"><code>{U+00E9}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+E, g</td>
+<td>Latin Small Letter G with Acute</td>
+<td style="text-align:center"><code>{U+01F5}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+E, i</td>
+<td>Latin Small Letter I with Acute</td>
+<td style="text-align:center"><code>{U+00ED}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+E, m</td>
+<td>Latin Small Letter M with Acute</td>
+<td style="text-align:center"><code>{U+1E3F}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+E, n</td>
+<td>Latin Small Letter N with Acute</td>
+<td style="text-align:center"><code>{U+0144}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+E, o</td>
+<td>Latin Small Letter O with Acute</td>
+<td style="text-align:center"><code>{U+00F3}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+E, p</td>
+<td>Latin Small Letter P with Acute</td>
+<td style="text-align:center"><code>{U+1E55}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+E, r</td>
+<td>Latin Small Letter R with Acute</td>
+<td style="text-align:center"><code>{U+0155}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+E, s</td>
+<td>Latin Small Letter S with Acute</td>
+<td style="text-align:center"><code>{U+015B}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+E, w</td>
+<td>Latin Small Letter W with Acute</td>
+<td style="text-align:center"><code>{U+1E83}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+E, y</td>
+<td>Latin Small Letter Y with Acute</td>
+<td style="text-align:center"><code>{U+00FD}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+E, z</td>
+<td>Latin Small Letter Z with Acute</td>
+<td style="text-align:center"><code>{U+017A}</code></td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after : always; visibility : hidden"> 
+\pagebreak </div>
+<h2 id="%C2%A7-dead-key-acute-accent--%C2%B4--2-of-2-uppercase">§ Dead Key: Acute Accent [ ´ ] (2 of 2: Uppercase)</h2>
+<p>Option+E, then key or Shift+key. {U+00B4}</p>
+<pre><code>  Key: a c e g i m n o p r s w y z  
+Lower: á ć é ǵ í ḿ ń ó ṕ ŕ ś ẃ ý ź  
+Upper: Á Ć É Ǵ Í Ḿ Ń Ó Ṕ Ŕ Ś Ẃ Ý Ź  
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">–– Keys ––</th>
+<th>–––––––––––––––– Description –––––––––––––––––</th>
+<th style="text-align:center">–– Unicode ––</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Opt+E, A</td>
+<td>Latin Capital Letter A with Acute</td>
+<td style="text-align:center"><code>{U+00C1}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+E, C</td>
+<td>Latin Capital Letter C with Acute</td>
+<td style="text-align:center"><code>{U+0106}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+E, E</td>
+<td>Latin Capital Letter E with Acute</td>
+<td style="text-align:center"><code>{U+00C9}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+E, G</td>
+<td>Latin Capital Letter G with Acute</td>
+<td style="text-align:center"><code>{U+01F4}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+E, I</td>
+<td>Latin Capital Letter I with Acute</td>
+<td style="text-align:center"><code>{U+00CD}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+E, M</td>
+<td>Latin Capital Letter M with Acute</td>
+<td style="text-align:center"><code>{U+1E3E}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+E, N</td>
+<td>Latin Capital Letter N with Acute</td>
+<td style="text-align:center"><code>{U+0143}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+E, O</td>
+<td>Latin Capital Letter O with Acute</td>
+<td style="text-align:center"><code>{U+00D3}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+E, P</td>
+<td>Latin Capital Letter P with Acute</td>
+<td style="text-align:center"><code>{U+1E54}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+E, R</td>
+<td>Latin Capital Letter R with Acute</td>
+<td style="text-align:center"><code>{U+0154}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+E, S</td>
+<td>Latin Capital Letter S with Acute</td>
+<td style="text-align:center"><code>{U+015A}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+E, W</td>
+<td>Latin Capital Letter W with Acute</td>
+<td style="text-align:center"><code>{U+1E82}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+E, Y</td>
+<td>Latin Capital Letter Y with Acute</td>
+<td style="text-align:center"><code>{U+00DD}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+E, Z</td>
+<td>Latin Capital Letter Z with Acute</td>
+<td style="text-align:center"><code>{U+0179}</code></td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after : always; visibility : hidden"> 
+\pagebreak </div>
+<h2 id="%C2%A7-dead-key-combining-double-grave--%CC%8F">§ Dead Key: Combining Double Grave [ ̏  ]</h2>
+<p>Shift+Option+Y, then key or Shift+key. {U+030F}</p>
+<pre><code>  Key: a e i o r u  
+Lower: ȁ ȅ ȉ ȍ ȑ ȕ  
+Upper: Ȁ Ȅ Ȉ Ȍ Ȑ Ȕ  
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">–– Keys ––</th>
+<th>–––––––––––––––– Description –––––––––––––––––</th>
+<th style="text-align:center">–– Unicode ––</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">⇧+Opt+Y, a</td>
+<td>Latin Small Letter A with Double Grave</td>
+<td style="text-align:center"><code>{U+0201}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+Y, e</td>
+<td>Latin Small Letter E with Double Grave</td>
+<td style="text-align:center"><code>{U+0205}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+Y, i</td>
+<td>Latin Small Letter I with Double Grave</td>
+<td style="text-align:center"><code>{U+0209}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+Y, o</td>
+<td>Latin Small Letter O with Double Grave</td>
+<td style="text-align:center"><code>{U+020D}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+Y, r</td>
+<td>Latin Small Letter R with Double Grave</td>
+<td style="text-align:center"><code>{U+0211}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+Y, u</td>
+<td>Latin Small Letter U with Double Grave</td>
+<td style="text-align:center"><code>{U+0215}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+Y, A</td>
+<td>Latin Capital Letter A with Double Grave</td>
+<td style="text-align:center"><code>{U+0200}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+Y, E</td>
+<td>Latin Capital Letter E with Double Grave</td>
+<td style="text-align:center"><code>{U+0204}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+Y, I</td>
+<td>Latin Capital Letter I with Double Grave</td>
+<td style="text-align:center"><code>{U+0208}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+Y, O</td>
+<td>Latin Capital Letter O with Double Grave</td>
+<td style="text-align:center"><code>{U+020C}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+Y, R</td>
+<td>Latin Capital Letter R with Double Grave</td>
+<td style="text-align:center"><code>{U+0210}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+Y, U</td>
+<td>Latin Capital Letter U with Double Grave</td>
+<td style="text-align:center"><code>{U+0214}</code></td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after : always; visibility : hidden"> 
+\pagebreak </div>
+<h2 id="%C2%A7-dead-key-umlautdiaeresis">§ Dead Key: Umlaut/Diaeresis [ ¨ ]</h2>
+<p>Option+U, then key or Shift+key. {U+00A8}</p>
+<pre><code>  Key: a e h i o t u w x y  
+Lower: ä ë ḧ ï ö ẗ ü ẅ ẍ ÿ  
+Upper: Ä Ë Ḧ Ï Ö T̈ Ü Ẅ Ẍ Ÿ  
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">–– Keys ––</th>
+<th>–––––––––––––––– Description –––––––––––––––––</th>
+<th style="text-align:center">–– Unicode ––</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Opt+U, a</td>
+<td>Latin Small Letter A with Diaeresis</td>
+<td style="text-align:center"><code>{U+00E4}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+U, e</td>
+<td>Latin Small Letter E with Diaeresis</td>
+<td style="text-align:center"><code>{U+00EB}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+U, h</td>
+<td>Latin Small Letter H with Diaeresis</td>
+<td style="text-align:center"><code>{U+1E27}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+U, i</td>
+<td>Latin Small Letter I with Diaeresis</td>
+<td style="text-align:center"><code>{U+00EF}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+U, o</td>
+<td>Latin Small Letter O with Diaeresis</td>
+<td style="text-align:center"><code>{U+00F6}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+U, t</td>
+<td>Latin Small Letter T with Diaeresis</td>
+<td style="text-align:center"><code>{U+1E97}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+U, u</td>
+<td>Latin Small Letter U with Diaeresis</td>
+<td style="text-align:center"><code>{U+00FC}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+U, w</td>
+<td>Latin Small Letter W with Diaeresis</td>
+<td style="text-align:center"><code>{U+1E85}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+U, x</td>
+<td>Latin Small Letter X with Diaeresis</td>
+<td style="text-align:center"><code>{U+1E8D}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+U, y</td>
+<td>Latin Small Letter Y with Diaeresis</td>
+<td style="text-align:center"><code>{U+00FF}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+U, A</td>
+<td>Latin Capital Letter A with Diaeresis</td>
+<td style="text-align:center"><code>{U+00C4}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+U, E</td>
+<td>Latin Capital Letter E with Diaeresis</td>
+<td style="text-align:center"><code>{U+00CB}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+U, H</td>
+<td>Latin Capital Letter H with Diaeresis</td>
+<td style="text-align:center"><code>{U+1E26}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+U, I</td>
+<td>Latin Capital Letter I with Diaeresis</td>
+<td style="text-align:center"><code>{U+00CF}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+U, O</td>
+<td>Latin Capital Letter O with Diaeresis</td>
+<td style="text-align:center"><code>{U+00D6}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+U, T</td>
+<td>Latin Capital Letter T with Diaeresis</td>
+<td style="text-align:center"><code>{U+0054}</code>†</td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+U, U</td>
+<td>Latin Capital Letter U with Diaeresis</td>
+<td style="text-align:center"><code>{U+00DC}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+U, W</td>
+<td>Latin Capital Letter W with Diaeresis</td>
+<td style="text-align:center"><code>{U+1E84}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+U, X</td>
+<td>Latin Capital Letter X with Diaeresis</td>
+<td style="text-align:center"><code>{U+1E8C}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+U, Y</td>
+<td>Latin Capital Letter Y with Diaeresis</td>
+<td style="text-align:center"><code>{U+0178}</code></td>
+</tr>
+</tbody>
+</table>
+<p>† Unaccented character, must combine with Combining Diaeresis {U+0308}</p>
+<div style="page-break-after : always; visibility : hidden"> 
+\pagebreak </div>
+<h2 id="%C2%A7-dead-key-apostrophehorn--%CA%BC">§ Dead Key: Apostrophe/Horn [ ʼ ]</h2>
+<p>Option+I, then key or Shift+key. {U+02BC}</p>
+<pre><code>  Key: o u  
+Lower: ơ ư  
+Upper: Ơ Ư  
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">–– Keys ––</th>
+<th>–––––––––––––––– Description –––––––––––––––––</th>
+<th style="text-align:center">–– Unicode ––</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Opt+I, o</td>
+<td>Latin Small Letter O with Horn</td>
+<td style="text-align:center"><code>{U+01A1}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+I, u</td>
+<td>Latin Small Letter U with Horn</td>
+<td style="text-align:center"><code>{U+01B0}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+I, O</td>
+<td>Latin Capital Letter O with Horn</td>
+<td style="text-align:center"><code>{U+01A0}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+I, U</td>
+<td>Latin Capital Letter U with Horn</td>
+<td style="text-align:center"><code>{U+01AF}</code></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<br/>
+<h2 id="%C2%A7-dead-key-comma-below">§ Dead Key: Comma Below [ , ]</h2>
+<p>Option+P, then key or Shift+key. {U+002C}</p>
+<pre><code>  Key: s t  
+Lower: ș ț  
+Upper: Ș Ț  
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">–– Keys ––</th>
+<th>–––––––––––––––– Description –––––––––––––––––</th>
+<th style="text-align:center">–– Unicode ––</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Opt+P, s</td>
+<td>Latin Small Letter s with Comma Below</td>
+<td style="text-align:center"><code>{U+0219}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+P, t</td>
+<td>Latin Small Letter t with Comma Below</td>
+<td style="text-align:center"><code>{U+021B}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+P, S</td>
+<td>Latin Capital Letter S with Comma Below</td>
+<td style="text-align:center"><code>{U+0218}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+P, T</td>
+<td>Latin Capital Letter T with Comma Below</td>
+<td style="text-align:center"><code>{U+021A}</code></td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after : always; visibility : hidden"> 
+\pagebreak </div>
+<h2 id="%C2%A7-dead-key-macron--%C2%AF--1-of-2-lowercase">§ Dead Key: Macron [ ¯ ] (1 of 2: Lowercase)</h2>
+<p>Option+A, then key or Shift+key. {U+00AF}</p>
+<pre><code>  Key: a e g i l o r s v y z  
+Lower: ā ē ḡ ī ḹ ō ṝ s̄ ǖ ȳ z̄  
+Upper: Ā Ē Ḡ Ī Ḹ Ō Ṝ S̄ Ǖ Ȳ Z̄  
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">–– Keys ––</th>
+<th>–––––––––––––––– Description –––––––––––––––––</th>
+<th style="text-align:center">–– Unicode ––</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Opt+A, a</td>
+<td>Latin Small Ltr A w/Macron</td>
+<td style="text-align:center"><code>{U+0101}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+A, e</td>
+<td>Latin Small Ltr E w/Macron</td>
+<td style="text-align:center"><code>{U+0113}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+A, g</td>
+<td>Latin Small Ltr G w/Macron</td>
+<td style="text-align:center"><code>{U+1E21}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+A, i</td>
+<td>Latin Small Ltr I w/Macron</td>
+<td style="text-align:center"><code>{U+012B}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+A, l</td>
+<td>Latin Small Ltr L w/Macron and Dot Below</td>
+<td style="text-align:center"><code>{U+006C}</code>†</td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+A, o</td>
+<td>Latin Small Ltr O w/Macron</td>
+<td style="text-align:center"><code>{U+014D}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+A, r</td>
+<td>Latin Small Ltr R w/Macron and Dot Below</td>
+<td style="text-align:center"><code>{U+0072}</code>†</td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+A, s</td>
+<td>Latin Small Ltr S w/Macron</td>
+<td style="text-align:center"><code>{U+0073}</code>‡</td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+A, v</td>
+<td>Latin Small Ltr V w/Macron</td>
+<td style="text-align:center"><code>{U+01D6}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+A, y</td>
+<td>Latin Small Ltr Y w/Macron</td>
+<td style="text-align:center"><code>{U+0233}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+A, z</td>
+<td>Latin Small Ltr Z w/Macron</td>
+<td style="text-align:center"><code>{U+007A}</code>‡</td>
+</tr>
+</tbody>
+</table>
+<p>† Unaccented character, must combine with Combining Macron {U+0304} and<br>
+then add Combining Dot Below {U+0323} to get final character.</p>
+<p>‡ Unaccented character, must combine with Combining Macron {U+0304}</p>
+<div style="page-break-after : always; visibility : hidden"> 
+\pagebreak </div>
+<h2 id="%C2%A7-dead-key-macron--%C2%AF--2-of-2-uppercase">§ Dead Key: Macron [ ¯ ] (2 of 2: Uppercase)</h2>
+<p>Option+A, then key or Shift+key. {U+00AF}</p>
+<pre><code>  Key: a e g i l o r s v y z  
+Lower: ā ē ḡ ī ḹ ō ṝ s̄ ǖ ȳ z̄  
+Upper: Ā Ē Ḡ Ī Ḹ Ō Ṝ S̄ Ǖ Ȳ Z̄  
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">–– Keys ––</th>
+<th>–––––––––––––––– Description –––––––––––––––––</th>
+<th style="text-align:center">–– Unicode ––</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Opt+A, A</td>
+<td>Latin Capital Ltr A w/Macron</td>
+<td style="text-align:center"><code>{U+0100}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+A, E</td>
+<td>Latin Capital Ltr E w/Macron</td>
+<td style="text-align:center"><code>{U+0112}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+A, G</td>
+<td>Latin Capital Ltr G w/Macron</td>
+<td style="text-align:center"><code>{U+1E20}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+A, I</td>
+<td>Latin Capital Ltr I w/Macron</td>
+<td style="text-align:center"><code>{U+012A}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+A, L</td>
+<td>Latin Capital Ltr L w/Macron and Dot Below</td>
+<td style="text-align:center"><code>{U+004C}</code>†</td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+A, O</td>
+<td>Latin Capital Ltr O w/Macron</td>
+<td style="text-align:center"><code>{U+014C}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+A, R</td>
+<td>Latin Capital Ltr R w/Macron and Dot Below</td>
+<td style="text-align:center"><code>{U+0052}</code>†</td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+A, S</td>
+<td>Latin Capital Ltr S w/Macron</td>
+<td style="text-align:center"><code>{U+0053}</code>‡</td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+A, V</td>
+<td>Latin Capital Ltr V w/Macron</td>
+<td style="text-align:center"><code>{U+01D5}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+A, Y</td>
+<td>Latin Capital Ltr Y w/Macron</td>
+<td style="text-align:center"><code>{U+0232}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+A, Z</td>
+<td>Latin Capital Ltr Z w/Macron</td>
+<td style="text-align:center"><code>{U+005A}</code>‡</td>
+</tr>
+</tbody>
+</table>
+<p>† Unaccented character, must combine with Combining Macron {U+0304} and<br>
+then add Combining Dot Below {U+0323} to get final character.</p>
+<p>‡ Unaccented character, must combine with Combining Macron {U+0304}</p>
+<div style="page-break-after : always; visibility : hidden"> 
+\pagebreak </div>
+<h2 id="%C2%A7-dead-key-combining-inverted-breve--%CC%91">§ Dead Key: Combining Inverted Breve [ ̑  ]</h2>
+<p>Shift+Option+S, then key or Shift+key. {U+0311}</p>
+<pre><code>  Key: a e i o r u  
+Lower: ȃ ȇ ȋ ȏ ȓ ȗ  
+Upper: Ȃ Ȇ Ȋ Ȏ Ȓ Ȗ  
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">–– Keys ––</th>
+<th>–––––––––––––––– Description –––––––––––––––––</th>
+<th style="text-align:center">–– Unicode ––</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">⇧+Opt+S, a</td>
+<td>Latin Small A with Inverted Breve</td>
+<td style="text-align:center"><code>{U+0203}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+S, e</td>
+<td>Latin Small E with Inverted Breve</td>
+<td style="text-align:center"><code>{U+0207}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+S, i</td>
+<td>Latin Small I with Inverted Breve</td>
+<td style="text-align:center"><code>{U+020B}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+S, o</td>
+<td>Latin Small O with Inverted Breve</td>
+<td style="text-align:center"><code>{U+020F}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+S, r</td>
+<td>Latin Small R with Inverted Breve</td>
+<td style="text-align:center"><code>{U+0213}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+S, u</td>
+<td>Latin Small U with Inverted Breve</td>
+<td style="text-align:center"><code>{U+0217}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+S, A</td>
+<td>Latin Capital A with Inverted Breve</td>
+<td style="text-align:center"><code>{U+0202}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+S, E</td>
+<td>Latin Capital E with Inverted Breve</td>
+<td style="text-align:center"><code>{U+0206}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+S, I</td>
+<td>Latin Capital I with Inverted Breve</td>
+<td style="text-align:center"><code>{U+020A}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+S, O</td>
+<td>Latin Capital O with Inverted Breve</td>
+<td style="text-align:center"><code>{U+020E}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+S, R</td>
+<td>Latin Capital R with Inverted Breve</td>
+<td style="text-align:center"><code>{U+0212}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+S, U</td>
+<td>Latin Capital U with Inverted Breve</td>
+<td style="text-align:center"><code>{U+0216}</code></td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after : always; visibility : hidden"> 
+\pagebreak </div>
+<h2 id="%C2%A7-dead-key-combining-tilde-below--%CC%B0">§ Dead Key: Combining Tilde Below [ ̰ ]</h2>
+<p>Shift+Option+F, then key or Shift+key. {U+0330}</p>
+<pre><code>  Key: e i u  
+Lower: ḛ ḭ ṵ  
+Upper: Ḛ Ḭ Ṵ  
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">–– Keys ––</th>
+<th>–––––––––––––––– Description –––––––––––––––––</th>
+<th style="text-align:center">–– Unicode ––</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">⇧+Opt+F, e</td>
+<td>Latin Small Letter e with Tilde Below</td>
+<td style="text-align:center"><code>{U+1E1B}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+F, i</td>
+<td>Latin Small Letter i with Tilde Below</td>
+<td style="text-align:center"><code>{U+1E2D}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+F, u</td>
+<td>Latin Small Letter u with Tilde Below</td>
+<td style="text-align:center"><code>{U+1E75}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+F, E</td>
+<td>Latin Capital Letter E with Tilde Below</td>
+<td style="text-align:center"><code>{U+1E1A}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+F, I</td>
+<td>Latin Capital Letter I with Tilde Below</td>
+<td style="text-align:center"><code>{U+1E2C}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+F, U</td>
+<td>Latin Capital Letter U with Tilde Below</td>
+<td style="text-align:center"><code>{U+1E74}</code></td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after : always; visibility : hidden"> 
+\pagebreak </div>
+<h2 id="%C2%A7-dead-key-caretcircumflex-below--%E2%80%B8">§ Dead Key: Caret/Circumflex Below [ ‸ ]</h2>
+<p>Shift+Option+G, then key or Shift+key. {U+2038}</p>
+<pre><code>  Key: d e l n t u  
+Lower: ḓ ḙ ḽ ṋ ṱ ṷ  
+Upper: Ḓ Ḙ Ḽ Ṋ Ṱ Ṷ  
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">–– Keys ––</th>
+<th>–––––––––––––––– Description –––––––––––––––––</th>
+<th style="text-align:center">–– Unicode ––</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">⇧+Opt+G, d</td>
+<td>Latin Small Letter D with Circumflex Below</td>
+<td style="text-align:center"><code>{U+1E13}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+G, e</td>
+<td>Latin Small Letter E with Circumflex Below</td>
+<td style="text-align:center"><code>{U+1E19}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+G, l</td>
+<td>Latin Small Letter L with Circumflex Below</td>
+<td style="text-align:center"><code>{U+1E3D}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+G, n</td>
+<td>Latin Small Letter N with Circumflex Below</td>
+<td style="text-align:center"><code>{U+1E4B}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+G, t</td>
+<td>Latin Small Letter T with Circumflex Below</td>
+<td style="text-align:center"><code>{U+1E71}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+G, u</td>
+<td>Latin Small Letter U with Circumflex Below</td>
+<td style="text-align:center"><code>{U+1E77}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+G, D</td>
+<td>Latin Capital Letter D with Circumflex Below</td>
+<td style="text-align:center"><code>{U+1E12}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+G, E</td>
+<td>Latin Capital Letter E with Circumflex Below</td>
+<td style="text-align:center"><code>{U+1E18}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+G, L</td>
+<td>Latin Capital Letter L with Circumflex Below</td>
+<td style="text-align:center"><code>{U+1E3C}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+G, N</td>
+<td>Latin Capital Letter N with Circumflex Below</td>
+<td style="text-align:center"><code>{U+1E4A}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+G, T</td>
+<td>Latin Capital Letter T with Circumflex Below</td>
+<td style="text-align:center"><code>{U+1E70}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+G, U</td>
+<td>Latin Capital Letter U with Circumflex Below</td>
+<td style="text-align:center"><code>{U+1E76}</code></td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after : always; visibility : hidden"> 
+\pagebreak </div>
+<h2 id="%C2%A7-dead-key-low-macronline-below--%CB%8D">§ Dead Key: Low Macron/Line Below [ ˍ ]</h2>
+<p>Option+H, then key or Shift+key. {U+02CD}</p>
+<pre><code>  Key: b d h k l n r t z  
+Lower: ḇ ḏ ẖ ḵ ḻ ṉ ṟ ṯ ẕ  
+Upper: Ḇ Ḏ H̱ Ḵ Ḻ Ṉ Ṟ Ṯ Ẕ  
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">–– Keys ––</th>
+<th>–––––––––––––––– Description –––––––––––––––––</th>
+<th style="text-align:center">–– Unicode ––</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Opt+H, b</td>
+<td>Latin Small Letter B with Line Below</td>
+<td style="text-align:center"><code>{U+1E07}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+H, d</td>
+<td>Latin Small Letter D with Line Below</td>
+<td style="text-align:center"><code>{U+1E0F}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+H, h</td>
+<td>Latin Small Letter H with Line Below</td>
+<td style="text-align:center"><code>{U+1E96}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+H, k</td>
+<td>Latin Small Letter K with Line Below</td>
+<td style="text-align:center"><code>{U+1E35}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+H, l</td>
+<td>Latin Small Letter L with Line Below</td>
+<td style="text-align:center"><code>{U+1E3B}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+H, n</td>
+<td>Latin Small Letter N with Line Below</td>
+<td style="text-align:center"><code>{U+1E49}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+H, r</td>
+<td>Latin Small Letter R with Line Below</td>
+<td style="text-align:center"><code>{U+1E5F}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+H, t</td>
+<td>Latin Small Letter T with Line Below</td>
+<td style="text-align:center"><code>{U+1E6F}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+H, z</td>
+<td>Latin Small Letter Z with Line Below</td>
+<td style="text-align:center"><code>{U+1E95}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+H, B</td>
+<td>Latin Capital Letter B with Line Below</td>
+<td style="text-align:center"><code>{U+1E06}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+H, D</td>
+<td>Latin Capital Letter D with Line Below</td>
+<td style="text-align:center"><code>{U+1E0E}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+H, H</td>
+<td>Latin Capital Letter H with Line Below</td>
+<td style="text-align:center"><code>{U+0048}</code>†</td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+H, K</td>
+<td>Latin Capital Letter K with Line Below</td>
+<td style="text-align:center"><code>{U+1E34}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+H, L</td>
+<td>Latin Capital Letter L with Line Below</td>
+<td style="text-align:center"><code>{U+1E3A}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+H, N</td>
+<td>Latin Capital Letter N with Line Below</td>
+<td style="text-align:center"><code>{U+1E48}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+H, R</td>
+<td>Latin Capital Letter R with Line Below</td>
+<td style="text-align:center"><code>{U+1E5E}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+H, T</td>
+<td>Latin Capital Letter T with Line Below</td>
+<td style="text-align:center"><code>{U+1E6E}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+H, Z</td>
+<td>Latin Capital Letter Z with Line Below</td>
+<td style="text-align:center"><code>{U+1E94}</code></td>
+</tr>
+</tbody>
+</table>
+<p>† Unaccented character, must combine with Combining Macron Below {U+0331}</p>
+<div style="page-break-after : always; visibility : hidden"> 
+\pagebreak </div>
+<h2 id="%C2%A7-dead-key-double-acute-accent--%CB%9D">§ Dead Key: Double Acute Accent [ ˝ ]</h2>
+<p>Option+J, then key or Shift+key. {U+02DD}</p>
+<pre><code>  Key: o u  
+Lower: ő ű  
+Upper: Ő Ű  
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">–– Keys ––</th>
+<th>–––––––––––––––– Description –––––––––––––––––</th>
+<th style="text-align:center">–– Unicode ––</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Opt+J, o</td>
+<td>Latin Small Letter o with Double Acute</td>
+<td style="text-align:center"><code>{U+0151}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+J, u</td>
+<td>Latin Small Letter u with Double Acute</td>
+<td style="text-align:center"><code>{U+0171}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+J, O</td>
+<td>Latin Capital O with Double Acute</td>
+<td style="text-align:center"><code>{U+0150}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+J, U</td>
+<td>Latin Capital U with Double Acute</td>
+<td style="text-align:center"><code>{U+0170}</code></td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after : always; visibility : hidden"> 
+\pagebreak </div>
+<h2 id="%C2%A7-dead-key-ring-above--%CB%9A">§ Dead Key: Ring Above [ ˚ ]</h2>
+<p>Option+K, then key or Shift+key. {U+02DA}</p>
+<pre><code>  Key: a e o u w y  
+Lower: å e̊ o̊ ů ẘ ẙ  
+Upper: Å E̊ O̊ Ů W̊ Y̊  
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">–– Keys ––</th>
+<th>–––––––––––––––– Description –––––––––––––––––</th>
+<th style="text-align:center">–– Unicode ––</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Opt+K, a</td>
+<td>Latin Small Letter A with Ring Above</td>
+<td style="text-align:center"><code>{U+00E5}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+K, e</td>
+<td>Latin Small Letter E with Ring Above</td>
+<td style="text-align:center"><code>{U+0065}</code>†</td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+K, o</td>
+<td>Latin Small Letter O with Ring Above</td>
+<td style="text-align:center"><code>{U+006F}</code>†</td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+K, u</td>
+<td>Latin Small Letter U with Ring Above</td>
+<td style="text-align:center"><code>{U+016F}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+K, w</td>
+<td>Latin Small Letter W with Ring Above</td>
+<td style="text-align:center"><code>{U+1E98}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+K, y</td>
+<td>Latin Small Letter Y with Ring Above</td>
+<td style="text-align:center"><code>{U+1E99}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+K, A</td>
+<td>Latin Capital A with Ring Above</td>
+<td style="text-align:center"><code>{U+00C5}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+K, E</td>
+<td>Latin Capital E with Ring Above</td>
+<td style="text-align:center"><code>{U+0045}</code>†</td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+K, O</td>
+<td>Latin Capital O with Ring Above</td>
+<td style="text-align:center"><code>{U+004F}</code>†</td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+K, U</td>
+<td>Latin Capital U with Ring Above</td>
+<td style="text-align:center"><code>{U+016E}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+K, W</td>
+<td>Latin Capital W with Ring Above</td>
+<td style="text-align:center"><code>{U+0057}</code>†</td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+K, Y</td>
+<td>Latin Capital Y with Ring Above</td>
+<td style="text-align:center"><code>{U+0059}</code>†</td>
+</tr>
+</tbody>
+</table>
+<p>† Unaccented character, must combine with Combining Ring Above {U+030A}</p>
+<div style="page-break-after : always; visibility : hidden"> 
+\pagebreak </div>
+<h2 id="%C2%A7-dead-key-strokehyphen-minus">§ Dead Key: Stroke/Hyphen-Minus [ - ]</h2>
+<p>Option+L, then key or Shift+key. {U+002D}</p>
+<pre><code>  Key: b d g h i l o t u z  
+Lower: ƀ đ ǥ ħ ɨ ł ɵ ŧ ʉ ƶ  
+Upper:   Đ Ǥ Ħ Ɨ Ł Ɵ Ŧ   Ƶ  
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">–– Keys ––</th>
+<th>–––––––––––––––– Description –––––––––––––––––</th>
+<th style="text-align:center">–– Unicode ––</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Opt+L, b</td>
+<td>Latin Small Letter B with Stroke</td>
+<td style="text-align:center"><code>{U+0180}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+L, d</td>
+<td>Latin Small Letter D with Stroke</td>
+<td style="text-align:center"><code>{U+0111}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+L, g</td>
+<td>Latin Small Letter G with Stroke</td>
+<td style="text-align:center"><code>{U+01E5}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+L, h</td>
+<td>Latin Small Letter H with Stroke</td>
+<td style="text-align:center"><code>{U+0127}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+L, i</td>
+<td>Latin Small Letter I with Stroke</td>
+<td style="text-align:center"><code>{U+0268}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+L, l</td>
+<td>Latin Small Letter L with Stroke</td>
+<td style="text-align:center"><code>{U+0142}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+L, o</td>
+<td>Latin Small Letter Barred O</td>
+<td style="text-align:center"><code>{U+0275}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+L, t</td>
+<td>Latin Small Letter T with Stroke</td>
+<td style="text-align:center"><code>{U+0167}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+L, u</td>
+<td>Latin Small Letter U Bar</td>
+<td style="text-align:center"><code>{U+0289}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+L, z</td>
+<td>Latin Small Letter Z with Stroke</td>
+<td style="text-align:center"><code>{U+01B6}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+L, D</td>
+<td>Latin Capital Letter D with Stroke</td>
+<td style="text-align:center"><code>{U+0110}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+L, G</td>
+<td>Latin Capital Letter G with Stroke</td>
+<td style="text-align:center"><code>{U+01E4}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+L, H</td>
+<td>Latin Capital Letter H with Stroke</td>
+<td style="text-align:center"><code>{U+0126}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+L, I</td>
+<td>Latin Capital Letter I with Stroke</td>
+<td style="text-align:center"><code>{U+0197}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+L, L</td>
+<td>Latin Capital Letter L with Stroke</td>
+<td style="text-align:center"><code>{U+0141}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+L, O</td>
+<td>Latin Capital Letter O with Middle Tilde</td>
+<td style="text-align:center"><code>{U+019F}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+L, T</td>
+<td>Latin Capital Letter T with Stroke</td>
+<td style="text-align:center"><code>{U+0166}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+L, Z</td>
+<td>Latin Capital Letter Z with Stroke</td>
+<td style="text-align:center"><code>{U+01B5}</code></td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after : always; visibility : hidden"> 
+\pagebreak </div>
+<h2 id="%C2%A7-dead-key-numero-sign--%E2%84%96--1-of-3-numbersdigits">§ Dead Key: Numero Sign [ № ] (1 of 3: Numbers/Digits)</h2>
+<p>Shift+Option+; (Semicolon), then key or Shift+key. {U+2116}</p>
+<p>Digits: (letters in later section)</p>
+<pre><code>  Key: 2 3 5 6 7 8  
+Lower: ƨ ɛ ƽ ƅ ⁊ ȣ
+Upper: Ƨ Ɛ Ƽ Ƅ   Ȣ
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">––– Keys –––</th>
+<th>–––––––––––––––– Description –––––––––––––––––</th>
+<th style="text-align:center">–– Unicode ––</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">⇧+Opt+; , 3</td>
+<td>Latin Small Letter Open E</td>
+<td style="text-align:center"><code>{U+025B}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+; , 5</td>
+<td>Latin Small Letter Tone Five</td>
+<td style="text-align:center"><code>{U+01BD}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+; , 2</td>
+<td>Latin Small Letter Tone Two</td>
+<td style="text-align:center"><code>{U+01A8}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+; , 6</td>
+<td>Latin Small Letter Tone Six</td>
+<td style="text-align:center"><code>{U+0185}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+; , 7</td>
+<td>Tironian Sign Et</td>
+<td style="text-align:center"><code>{U+204A}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+; , 8</td>
+<td>Latin Small Letter Ou</td>
+<td style="text-align:center"><code>{U+0223}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+; , @</td>
+<td>Latin Capital Letter Tone Two</td>
+<td style="text-align:center"><code>{U+01A7}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+; , #</td>
+<td>Latin Capital Letter Open E</td>
+<td style="text-align:center"><code>{U+0190}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+; , %</td>
+<td>Latin Capital Letter Tone Five</td>
+<td style="text-align:center"><code>{U+01BC}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+; , ^</td>
+<td>Latin Capital Letter Tone Six</td>
+<td style="text-align:center"><code>{U+0184}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+; , *</td>
+<td>Latin Capital Letter Ou</td>
+<td style="text-align:center"><code>{U+0222}</code></td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after : always; visibility : hidden"> 
+\pagebreak </div>
+<h2 id="%C2%A7-dead-key-numero-sign--%E2%84%96--2-of-3-lowercase-letters">§ Dead Key: Numero Sign [ № ] (2 of 3: Lowercase Letters)</h2>
+<p>Shift+Option+; (Semicolon), then key or Shift+key. {U+2116}</p>
+<p>Lowercase Letters: (digits in previous section, uppercase letters in next section)</p>
+<pre><code>  Key: a c e g h j k  m n q r s u v w y z  
+Lower: ə ɔ ǝ ɣ ƕ ƞ ĸ  ɯ ŋ ƣ ʀ ſ ʊ ʌ ƿ ȝ ʒ  
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">––– Keys –––</th>
+<th>–––––––––––––––– Description –––––––––––––––––</th>
+<th style="text-align:center">–– Unicode ––</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">⇧+Opt+; , a</td>
+<td>Latin Small Letter Schwa</td>
+<td style="text-align:center"><code>{U+0259}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+; , c</td>
+<td>Latin Small Letter Open O</td>
+<td style="text-align:center"><code>{U+0254}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+; , e</td>
+<td>Latin Small Letter Turned E</td>
+<td style="text-align:center"><code>{U+01DD}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+; , g</td>
+<td>Latin Small Letter Gamma</td>
+<td style="text-align:center"><code>{U+0263}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+; , h</td>
+<td>Latin Small Letter Hv</td>
+<td style="text-align:center"><code>{U+0195}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+; , j</td>
+<td>Latin Small Letter N with Long Right Leg</td>
+<td style="text-align:center"><code>{U+019E}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+; , k</td>
+<td>Latin Small Letter Kra</td>
+<td style="text-align:center"><code>{U+0138}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+; , m</td>
+<td>Latin Small Letter Turned M</td>
+<td style="text-align:center"><code>{U+026F}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+; , n</td>
+<td>Latin Small Letter Eng</td>
+<td style="text-align:center"><code>{U+014B}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+; , q</td>
+<td>Latin Small Letter Oi</td>
+<td style="text-align:center"><code>{U+01A3}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+; , r</td>
+<td>Latin Letter Small Capital R</td>
+<td style="text-align:center"><code>{U+0280}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+; , s</td>
+<td>Latin Small Letter Long S</td>
+<td style="text-align:center"><code>{U+017F}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+; , u</td>
+<td>Latin Small Letter Upsilon</td>
+<td style="text-align:center"><code>{U+028A}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+; , v</td>
+<td>Latin Small Letter Turned V</td>
+<td style="text-align:center"><code>{U+028C}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+; , w</td>
+<td>Latin Letter Wynn</td>
+<td style="text-align:center"><code>{U+01BF}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+; , y</td>
+<td>Latin Small Letter Yogh</td>
+<td style="text-align:center"><code>{U+021D}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+; , z</td>
+<td>Latin Small Letter Ezh</td>
+<td style="text-align:center"><code>{U+0292}</code></td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after : always; visibility : hidden"> 
+\pagebreak </div>
+<h2 id="%C2%A7-dead-key-numero-sign--%E2%84%96--3-of-3-uppercase-letters">§ Dead Key: Numero Sign [ № ] (3 of 3: Uppercase Letters)</h2>
+<p>Shift+Option+; (Semicolon), then key or Shift+key. {U+2116}</p>
+<p>Uppercase Letters: (digits and lowercase in previous section)</p>
+<pre><code>  Key: a c e g h j k  m n q r u w y z  
+Upper: Ə Ɔ Ǝ Ɣ Ƕ Ƞ K’ Ɯ Ŋ Ƣ Ʀ Ʊ Ƿ Ȝ Ʒ  
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">––– Keys –––</th>
+<th>–––––––––––––––– Description –––––––––––––––––</th>
+<th style="text-align:center">–– Unicode ––</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">⇧+Opt+; , A</td>
+<td>Latin Capital Letter Schwa</td>
+<td style="text-align:center"><code>{U+018F}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+; , C</td>
+<td>Latin Capital Letter Open O</td>
+<td style="text-align:center"><code>{U+0186}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+; , E</td>
+<td>Latin Capital Letter Reversed E</td>
+<td style="text-align:center"><code>{U+018E}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+; , G</td>
+<td>Latin Capital Letter Gamma</td>
+<td style="text-align:center"><code>{U+0194}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+; , H</td>
+<td>Latin Capital Letter Hwair</td>
+<td style="text-align:center"><code>{U+01F6}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+; , J</td>
+<td>Latin Capital Letter N with Long Right Leg</td>
+<td style="text-align:center"><code>{U+0220}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+; , K</td>
+<td>Latin Capital Letter K with Apostrophe</td>
+<td style="text-align:center"><code>{U+004B}</code>†</td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+; , M</td>
+<td>Latin Capital Letter Turned M</td>
+<td style="text-align:center"><code>{U+019C}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+; , N</td>
+<td>Latin Capital Letter Eng</td>
+<td style="text-align:center"><code>{U+014A}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+; , Q</td>
+<td>Latin Capital Letter Oi</td>
+<td style="text-align:center"><code>{U+01A2}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+; , R</td>
+<td>Latin Letter Yr</td>
+<td style="text-align:center"><code>{U+01A6}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+; , U</td>
+<td>Latin Capital Letter Upsilon</td>
+<td style="text-align:center"><code>{U+01B1}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+; , W</td>
+<td>Latin Capital Letter Wynn</td>
+<td style="text-align:center"><code>{U+01F7}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+; , Y</td>
+<td>Latin Capital Letter Yogh</td>
+<td style="text-align:center"><code>{U+021C}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+; , Z</td>
+<td>Latin Capital Letter Ezh</td>
+<td style="text-align:center"><code>{U+01B7}</code></td>
+</tr>
+</tbody>
+</table>
+<p>† Unaccented character, must combine with Right Single Quotation Mark {U+2019}</p>
+<div style="page-break-after : always; visibility : hidden"> 
+\pagebreak </div>
+<h2 id="%C2%A7-dead-key-hook-aboveglottal-stop--%CB%80">§ Dead Key: Hook Above/Glottal Stop [ ˀ ]</h2>
+<p>Option+Z, then key or Shift+key. {U+02C0}</p>
+<pre><code>  Key: a e i o u y  
+Lower: ả ẻ ỉ ỏ ủ ỷ  
+Upper: Ả Ẻ Ỉ Ỏ Ủ Ỷ  
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">–– Keys ––</th>
+<th>–––––––––––––––– Description –––––––––––––––––</th>
+<th style="text-align:center">–– Unicode ––</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Opt+Z, a</td>
+<td>Latin Small Letter A with Hook Above</td>
+<td style="text-align:center"><code>{U+1EA3}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+Z, e</td>
+<td>Latin Small Letter E with Hook Above</td>
+<td style="text-align:center"><code>{U+1EBB}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+Z, i</td>
+<td>Latin Small Letter I with Hook Above</td>
+<td style="text-align:center"><code>{U+1EC9}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+Z, o</td>
+<td>Latin Small Letter O with Hook Above</td>
+<td style="text-align:center"><code>{U+1ECF}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+Z, u</td>
+<td>Latin Small Letter U with Hook Above</td>
+<td style="text-align:center"><code>{U+1EE7}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+Z, y</td>
+<td>Latin Small Letter Y with Hook Above</td>
+<td style="text-align:center"><code>{U+1EF7}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+Z, A</td>
+<td>Latin Capital Letter A with Hook Above</td>
+<td style="text-align:center"><code>{U+1EA2}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+Z, E</td>
+<td>Latin Capital Letter E with Hook Above</td>
+<td style="text-align:center"><code>{U+1EBA}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+Z, I</td>
+<td>Latin Capital Letter I with Hook Above</td>
+<td style="text-align:center"><code>{U+1EC8}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+Z, O</td>
+<td>Latin Capital Letter O with Hook Above</td>
+<td style="text-align:center"><code>{U+1ECE}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+Z, U</td>
+<td>Latin Capital Letter U with Hook Above</td>
+<td style="text-align:center"><code>{U+1EE6}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+Z, Y</td>
+<td>Latin Capital Letter Y with Hook Above</td>
+<td style="text-align:center"><code>{U+1EF6}</code></td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after : always; visibility : hidden"> 
+\pagebreak </div>
+<h2 id="%C2%A7-dead-key-dot-below----1-of-2-lowercase">§ Dead Key: Dot Below [ . ] (1 of 2: Lowercase)</h2>
+<p>Option+X, then key or Shift+key. {U+002E}</p>
+<pre><code>  Key: a b d e h i k l m n o r s t u v w y z  
+Lower: ạ ḅ ḍ ẹ ḥ ị ḳ ḷ ṃ ṇ ọ ṛ ṣ ṭ ụ ṿ ẉ ỵ ẓ  
+Upper: Ạ Ḅ Ḍ Ẹ Ḥ Ị Ḳ Ḷ Ṃ Ṇ Ọ Ṛ Ṣ Ṭ Ụ Ṿ Ẉ Ỵ Ẓ  
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">–– Keys ––</th>
+<th>–––––––––––––––– Description –––––––––––––––––</th>
+<th style="text-align:center">–– Unicode ––</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Opt+X, a</td>
+<td>Latin Small Letter A with Dot Below</td>
+<td style="text-align:center"><code>{U+1EA1}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+X, b</td>
+<td>Latin Small Letter B with Dot Below</td>
+<td style="text-align:center"><code>{U+1E05}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+X, d</td>
+<td>Latin Small Letter D with Dot Below</td>
+<td style="text-align:center"><code>{U+1E0D}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+X, e</td>
+<td>Latin Small Letter E with Dot Below</td>
+<td style="text-align:center"><code>{U+1EB9}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+X, h</td>
+<td>Latin Small Letter H with Dot Below</td>
+<td style="text-align:center"><code>{U+1E25}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+X, i</td>
+<td>Latin Small Letter I with Dot Below</td>
+<td style="text-align:center"><code>{U+1ECB}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+X, k</td>
+<td>Latin Small Letter K with Dot Below</td>
+<td style="text-align:center"><code>{U+1E33}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+X, l</td>
+<td>Latin Small Letter L with Dot Below</td>
+<td style="text-align:center"><code>{U+1E37}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+X, m</td>
+<td>Latin Small Letter M with Dot Below</td>
+<td style="text-align:center"><code>{U+1E43}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+X, n</td>
+<td>Latin Small Letter N with Dot Below</td>
+<td style="text-align:center"><code>{U+1E47}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+X, o</td>
+<td>Latin Small Letter O with Dot Below</td>
+<td style="text-align:center"><code>{U+1ECD}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+X, r</td>
+<td>Latin Small Letter R with Dot Below</td>
+<td style="text-align:center"><code>{U+1E5B}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+X, s</td>
+<td>Latin Small Letter S with Dot Below</td>
+<td style="text-align:center"><code>{U+1E63}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+X, t</td>
+<td>Latin Small Letter T with Dot Below</td>
+<td style="text-align:center"><code>{U+1E6D}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+X, u</td>
+<td>Latin Small Letter U with Dot Below</td>
+<td style="text-align:center"><code>{U+1EE5}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+X, v</td>
+<td>Latin Small Letter V with Dot Below</td>
+<td style="text-align:center"><code>{U+1E7F}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+X, w</td>
+<td>Latin Small Letter W with Dot Below</td>
+<td style="text-align:center"><code>{U+1E89}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+X, y</td>
+<td>Latin Small Letter Y with Dot Below</td>
+<td style="text-align:center"><code>{U+1EF5}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+X, z</td>
+<td>Latin Small Letter Z with Dot Below</td>
+<td style="text-align:center"><code>{U+1E93}</code></td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after : always; visibility : hidden"> 
+\pagebreak </div>
+<h2 id="%C2%A7-dead-key-dot-below----2-of-2-uppercase">§ Dead Key: Dot Below [ . ] (2 of 2: Uppercase)</h2>
+<p>Option+X, then key or Shift+key. {U+002E}</p>
+<pre><code>  Key: a b d e h i k l m n o r s t u v w y z  
+Lower: ạ ḅ ḍ ẹ ḥ ị ḳ ḷ ṃ ṇ ọ ṛ ṣ ṭ ụ ṿ ẉ ỵ ẓ  
+Upper: Ạ Ḅ Ḍ Ẹ Ḥ Ị Ḳ Ḷ Ṃ Ṇ Ọ Ṛ Ṣ Ṭ Ụ Ṿ Ẉ Ỵ Ẓ  
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">–– Keys ––</th>
+<th>–––––––––––––––– Description –––––––––––––––––</th>
+<th style="text-align:center">–– Unicode ––</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Opt+X, A</td>
+<td>Latin Capital Letter A with Dot Below</td>
+<td style="text-align:center"><code>{U+1EA0}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+X, B</td>
+<td>Latin Capital Letter B with Dot Below</td>
+<td style="text-align:center"><code>{U+1E04}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+X, D</td>
+<td>Latin Capital Letter D with Dot Below</td>
+<td style="text-align:center"><code>{U+1E0C}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+X, E</td>
+<td>Latin Capital Letter E with Dot Below</td>
+<td style="text-align:center"><code>{U+1EB8}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+X, H</td>
+<td>Latin Capital Letter H with Dot Below</td>
+<td style="text-align:center"><code>{U+1E24}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+X, I</td>
+<td>Latin Capital Letter I with Dot Below</td>
+<td style="text-align:center"><code>{U+1ECA}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+X, K</td>
+<td>Latin Capital Letter K with Dot Below</td>
+<td style="text-align:center"><code>{U+1E32}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+X, L</td>
+<td>Latin Capital Letter L with Dot Below</td>
+<td style="text-align:center"><code>{U+1E36}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+X, M</td>
+<td>Latin Capital Letter M with Dot Below</td>
+<td style="text-align:center"><code>{U+1E42}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+X, N</td>
+<td>Latin Capital Letter N with Dot Below</td>
+<td style="text-align:center"><code>{U+1E46}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+X, O</td>
+<td>Latin Capital Letter O with Dot Below</td>
+<td style="text-align:center"><code>{U+1ECC}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+X, R</td>
+<td>Latin Capital Letter R with Dot Below</td>
+<td style="text-align:center"><code>{U+1E5A}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+X, S</td>
+<td>Latin Capital Letter S with Dot Below</td>
+<td style="text-align:center"><code>{U+1E62}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+X, T</td>
+<td>Latin Capital Letter T with Dot Below</td>
+<td style="text-align:center"><code>{U+1E6C}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+X, U</td>
+<td>Latin Capital Letter U with Dot Below</td>
+<td style="text-align:center"><code>{U+1EE4}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+X, V</td>
+<td>Latin Capital Letter V with Dot Below</td>
+<td style="text-align:center"><code>{U+1E7E}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+X, W</td>
+<td>Latin Capital Letter W with Dot Below</td>
+<td style="text-align:center"><code>{U+1E88}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+X, Y</td>
+<td>Latin Capital Letter Y with Dot Below</td>
+<td style="text-align:center"><code>{U+1EF4}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+X, Z</td>
+<td>Latin Capital Letter Z with Dot Below</td>
+<td style="text-align:center"><code>{U+1E92}</code></td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after : always; visibility : hidden"> 
+\pagebreak </div>
+<h2 id="%C2%A7-dead-key-cedillacedille--%C2%B8--1-of-2-lowercase">§ Dead Key: Cedilla/Cedille [ ¸ ] (1 of 2: Lowercase)</h2>
+<p>Option+C, then key or Shift+key. {U+00B8}</p>
+<pre><code>  Key: c d e g h k l n r s t z  
+Lower: ç ḑ ȩ ģ ḩ ķ ļ ņ ŗ ş ţ z̧  
+Upper: Ç Ḑ Ȩ Ģ Ḩ Ķ Ļ Ņ Ŗ Ş Ţ Z̧  
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">–– Keys ––</th>
+<th>–––––––––––––––– Description –––––––––––––––––</th>
+<th style="text-align:center">–– Unicode ––</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Opt+C, c</td>
+<td>Latin Small Letter C with Cedilla</td>
+<td style="text-align:center"><code>{U+00E7}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+C, d</td>
+<td>Latin Small Letter D with Cedilla</td>
+<td style="text-align:center"><code>{U+1E11}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+C, e</td>
+<td>Latin Small Letter E with Cedilla</td>
+<td style="text-align:center"><code>{U+0229}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+C, g</td>
+<td>Latin Small Letter G with Cedilla</td>
+<td style="text-align:center"><code>{U+0123}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+C, h</td>
+<td>Latin Small Letter H with Cedilla</td>
+<td style="text-align:center"><code>{U+1E29}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+C, k</td>
+<td>Latin Small Letter K with Cedilla</td>
+<td style="text-align:center"><code>{U+0137}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+C, l</td>
+<td>Latin Small Letter L with Cedilla</td>
+<td style="text-align:center"><code>{U+013C}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+C, n</td>
+<td>Latin Small Letter N with Cedilla</td>
+<td style="text-align:center"><code>{U+0146}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+C, r</td>
+<td>Latin Small Letter R with Cedilla</td>
+<td style="text-align:center"><code>{U+0157}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+C, s</td>
+<td>Latin Small Letter S with Cedilla</td>
+<td style="text-align:center"><code>{U+015F}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+C, t</td>
+<td>Latin Small Letter T with Cedilla</td>
+<td style="text-align:center"><code>{U+0163}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+C, z</td>
+<td>Latin Small Letter Z with Cedilla</td>
+<td style="text-align:center"><code>{U+007A}</code>†</td>
+</tr>
+</tbody>
+</table>
+<p>† Unaccented character, must combine with Combining Cedilla {U+0327}</p>
+<div style="page-break-after : always; visibility : hidden"> 
+\pagebreak </div>
+<h2 id="%C2%A7-dead-key-cedillacedille--%C2%B8--2-of-2-uppercase">§ Dead Key: Cedilla/Cedille [ ¸ ] (2 of 2: Uppercase)</h2>
+<p>Option+C, then key or Shift+key. {U+00B8}</p>
+<pre><code>  Key: c d e g h k l n r s t z  
+Lower: ç ḑ ȩ ģ ḩ ķ ļ ņ ŗ ş ţ z̧  
+Upper: Ç Ḑ Ȩ Ģ Ḩ Ķ Ļ Ņ Ŗ Ş Ţ Z̧  
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">–– Keys ––</th>
+<th>–––––––––––––––– Description –––––––––––––––––</th>
+<th style="text-align:center">–– Unicode ––</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Opt+C, C</td>
+<td>Latin Capital Letter C with Cedilla</td>
+<td style="text-align:center"><code>{U+00C7}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+C, D</td>
+<td>Latin Capital Letter D with Cedilla</td>
+<td style="text-align:center"><code>{U+1E10}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+C, E</td>
+<td>Latin Capital Letter E with Cedilla</td>
+<td style="text-align:center"><code>{U+0228}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+C, G</td>
+<td>Latin Capital Letter G with Cedilla</td>
+<td style="text-align:center"><code>{U+0122}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+C, H</td>
+<td>Latin Capital Letter H with Cedilla</td>
+<td style="text-align:center"><code>{U+1E28}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+C, K</td>
+<td>Latin Capital Letter K with Cedilla</td>
+<td style="text-align:center"><code>{U+0136}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+C, L</td>
+<td>Latin Capital Letter L with Cedilla</td>
+<td style="text-align:center"><code>{U+013B}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+C, N</td>
+<td>Latin Capital Letter N with Cedilla</td>
+<td style="text-align:center"><code>{U+0145}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+C, R</td>
+<td>Latin Capital Letter R with Cedilla</td>
+<td style="text-align:center"><code>{U+0156}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+C, S</td>
+<td>Latin Capital Letter S with Cedilla</td>
+<td style="text-align:center"><code>{U+015E}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+C, T</td>
+<td>Latin Capital Letter T with Cedilla</td>
+<td style="text-align:center"><code>{U+0162}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+C, Z</td>
+<td>Latin Capital Letter Z with Cedilla</td>
+<td style="text-align:center"><code>{U+005A}</code>†</td>
+</tr>
+</tbody>
+</table>
+<p>† Unaccented character, must combine with Combining Cedilla {U+0327}</p>
+<div style="page-break-after : always; visibility : hidden"> 
+\pagebreak </div>
+<h2 id="%C2%A7-dead-key-caronhacek--%CB%87--1-of-2-lowercase">§ Dead Key: Caron/hacek [ ˇ ] (1 of 2: Lowercase)</h2>
+<p>Option+V, then key or Shift+key. {U+02C7}</p>
+<pre><code>  Key: a c d e g h i j k l n o r s t u v x z  
+Lower: ǎ č ď ě ǧ ȟ ǐ ǰ ǩ ľ ň ǒ ř š ť ǔ ǚ ǯ ž  
+Upper: Ǎ Č Ď Ě Ǧ Ȟ Ǐ J̌ Ǩ Ľ Ň Ǒ Ř Š Ť Ǔ Ǚ Ǯ Ž  
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">–– Keys ––</th>
+<th>–––––––––––––––– Description –––––––––––––––––</th>
+<th style="text-align:center">–– Unicode ––</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Opt+V, a</td>
+<td>Latin Small Letter A with Caron</td>
+<td style="text-align:center"><code>{U+01CE}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+V, c</td>
+<td>Latin Small Letter C with Caron</td>
+<td style="text-align:center"><code>{U+010D}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+V, d</td>
+<td>Latin Small Letter D with Caron</td>
+<td style="text-align:center"><code>{U+010F}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+V, e</td>
+<td>Latin Small Letter E with Caron</td>
+<td style="text-align:center"><code>{U+011B}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+V, g</td>
+<td>Latin Small Letter G with Caron</td>
+<td style="text-align:center"><code>{U+01E7}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+V, h</td>
+<td>Latin Small Letter H with Caron</td>
+<td style="text-align:center"><code>{U+021F}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+V, i</td>
+<td>Latin Small Letter I with Caron</td>
+<td style="text-align:center"><code>{U+01D0}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+V, j</td>
+<td>Latin Small Letter J with Caron</td>
+<td style="text-align:center"><code>{U+01F0}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+V, k</td>
+<td>Latin Small Letter K with Caron</td>
+<td style="text-align:center"><code>{U+01E9}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+V, l</td>
+<td>Latin Small Letter L with Caron</td>
+<td style="text-align:center"><code>{U+013E}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+V, n</td>
+<td>Latin Small Letter N with Caron</td>
+<td style="text-align:center"><code>{U+0148}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+V, o</td>
+<td>Latin Small Letter O with Caron</td>
+<td style="text-align:center"><code>{U+01D2}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+V, r</td>
+<td>Latin Small Letter R with Caron</td>
+<td style="text-align:center"><code>{U+0159}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+V, s</td>
+<td>Latin Small Letter S with Caron</td>
+<td style="text-align:center"><code>{U+0161}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+V, t</td>
+<td>Latin Small Letter T with Caron</td>
+<td style="text-align:center"><code>{U+0165}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+V, u</td>
+<td>Latin Small Letter U with Caron</td>
+<td style="text-align:center"><code>{U+01D4}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+V, v</td>
+<td>Latin Small Letter U w/Diaeresis and Caron</td>
+<td style="text-align:center"><code>{U+01DA}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+V, x</td>
+<td>Latin Small Letter Ezh with Caron</td>
+<td style="text-align:center"><code>{U+0292}</code>†</td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+V, z</td>
+<td>Latin Small Letter Z with Caron</td>
+<td style="text-align:center"><code>{U+017E}</code></td>
+</tr>
+</tbody>
+</table>
+<p>† Unaccented character, must combine with Combining Caron {U+030C}</p>
+<div style="page-break-after : always; visibility : hidden"> 
+\pagebreak </div>
+<h2 id="%C2%A7-dead-key-caronhacek--%CB%87--2-of-2-uppercase">§ Dead Key: Caron/hacek [ ˇ ] (2 of 2: Uppercase)</h2>
+<p>Option+V, then key or Shift+key. {U+02C7}</p>
+<pre><code>  Key: a c d e g h i j k l n o r s t u v x z  
+Lower: ǎ č ď ě ǧ ȟ ǐ ǰ ǩ ľ ň ǒ ř š ť ǔ ǚ ǯ ž  
+Upper: Ǎ Č Ď Ě Ǧ Ȟ Ǐ J̌ Ǩ Ľ Ň Ǒ Ř Š Ť Ǔ Ǚ Ǯ Ž  
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">–– Keys ––</th>
+<th>–––––––––––––––– Description –––––––––––––––––</th>
+<th style="text-align:center">–– Unicode ––</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Opt+V, A</td>
+<td>Latin Capital Letter A with Caron</td>
+<td style="text-align:center"><code>{U+01CD}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+V, C</td>
+<td>Latin Capital Letter C with Caron</td>
+<td style="text-align:center"><code>{U+010C}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+V, D</td>
+<td>Latin Capital Letter D with Caron</td>
+<td style="text-align:center"><code>{U+010E}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+V, E</td>
+<td>Latin Capital Letter E with Caron</td>
+<td style="text-align:center"><code>{U+011A}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+V, G</td>
+<td>Latin Capital Letter G with Caron</td>
+<td style="text-align:center"><code>{U+01E6}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+V, H</td>
+<td>Latin Capital Letter H with Caron</td>
+<td style="text-align:center"><code>{U+021E}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+V, I</td>
+<td>Latin Capital Letter I with Caron</td>
+<td style="text-align:center"><code>{U+01CF}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+V, J</td>
+<td>Latin Capital Letter J with Caron</td>
+<td style="text-align:center"><code>{U+004A}</code>†</td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+V, K</td>
+<td>Latin Capital Letter K with Caron</td>
+<td style="text-align:center"><code>{U+01E8}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+V, L</td>
+<td>Latin Capital Letter L with Caron</td>
+<td style="text-align:center"><code>{U+013D}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+V, N</td>
+<td>Latin Capital Letter N with Caron</td>
+<td style="text-align:center"><code>{U+0147}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+V, O</td>
+<td>Latin Capital Letter O with Caron</td>
+<td style="text-align:center"><code>{U+01D1}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+V, R</td>
+<td>Latin Capital Letter R with Caron</td>
+<td style="text-align:center"><code>{U+0158}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+V, S</td>
+<td>Latin Capital Letter S with Caron</td>
+<td style="text-align:center"><code>{U+0160}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+V, T</td>
+<td>Latin Capital Letter T with Caron</td>
+<td style="text-align:center"><code>{U+0164}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+V, U</td>
+<td>Latin Capital Letter U with Caron</td>
+<td style="text-align:center"><code>{U+01D3}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+V, V</td>
+<td>Latin Capital Letter U w/Diaeresis and Caron</td>
+<td style="text-align:center"><code>{U+01D9}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+V, X</td>
+<td>Latin Capital Letter Ezh with Caron</td>
+<td style="text-align:center"><code>{U+01B7}</code>†</td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+V, Z</td>
+<td>Latin Capital Letter Z with Caron</td>
+<td style="text-align:center"><code>{U+017D}</code></td>
+</tr>
+</tbody>
+</table>
+<p>† Unaccented character, must combine with Combining Caron {U+030C}</p>
+<div style="page-break-after : always; visibility : hidden"> 
+\pagebreak </div>
+<h2 id="%C2%A7-dead-key-breve--%CB%98">§ Dead Key: Breve [ ˘ ]</h2>
+<p>Option+B, then key or Shift+key. {U+02D8}</p>
+<pre><code>  Key: a e g h i o u  
+Lower: ă ĕ ğ ḫ ĭ ŏ ŭ  
+Upper: Ă Ĕ Ğ Ḫ Ĭ Ŏ Ŭ  
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">–– Keys ––</th>
+<th>–––––––––––––––– Description –––––––––––––––––</th>
+<th style="text-align:center">–– Unicode ––</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Opt+B, a</td>
+<td>Latin Small Letter A with Breve</td>
+<td style="text-align:center"><code>{U+0103}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+B, e</td>
+<td>Latin Small Letter E with Breve</td>
+<td style="text-align:center"><code>{U+0115}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+B, g</td>
+<td>Latin Small Letter G with Breve</td>
+<td style="text-align:center"><code>{U+011F}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+B, h</td>
+<td>Latin Small Letter H with Breve Below</td>
+<td style="text-align:center"><code>{U+1E2B}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+B, i</td>
+<td>Latin Small Letter I with Breve</td>
+<td style="text-align:center"><code>{U+012D}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+B, o</td>
+<td>Latin Small Letter O with Breve</td>
+<td style="text-align:center"><code>{U+014F}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+B, u</td>
+<td>Latin Small Letter U with Breve</td>
+<td style="text-align:center"><code>{U+016D}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+B, A</td>
+<td>Latin Capital Letter A with Breve</td>
+<td style="text-align:center"><code>{U+0102}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+B, E</td>
+<td>Latin Capital Letter E with Breve</td>
+<td style="text-align:center"><code>{U+0114}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+B, G</td>
+<td>Latin Capital Letter G with Breve</td>
+<td style="text-align:center"><code>{U+011E}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+B, H</td>
+<td>Latin Capital Letter H with Breve Below</td>
+<td style="text-align:center"><code>{U+1E2A}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+B, I</td>
+<td>Latin Capital Letter I with Breve</td>
+<td style="text-align:center"><code>{U+012C}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+B, O</td>
+<td>Latin Capital Letter O with Breve</td>
+<td style="text-align:center"><code>{U+014E}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+B, U</td>
+<td>Latin Capital Letter U with Breve</td>
+<td style="text-align:center"><code>{U+016C}</code></td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after : always; visibility : hidden"> 
+\pagebreak </div>
+<h2 id="%C2%A7-dead-key-tilde--%CB%9C">§ Dead Key: Tilde [ ˜ ]</h2>
+<p>Option+N, then key or Shift+key. {U+02DC}</p>
+<pre><code>  Key: a e i n o u v y  
+Lower: ã ẽ ĩ ñ õ ũ ṽ ỹ  
+Upper: Ã Ẽ Ĩ Ñ Õ Ũ Ṽ Ỹ  
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">–– Keys ––</th>
+<th>–––––––––––––––– Description –––––––––––––––––</th>
+<th style="text-align:center">–– Unicode ––</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Opt+N, a</td>
+<td>Latin Small Letter A with Tilde</td>
+<td style="text-align:center"><code>{U+00E3}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+N, e</td>
+<td>Latin Small Letter E with Tilde</td>
+<td style="text-align:center"><code>{U+1EBD}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+N, i</td>
+<td>Latin Small Letter I with Tilde</td>
+<td style="text-align:center"><code>{U+0129}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+N, n</td>
+<td>Latin Small Letter N with Tilde</td>
+<td style="text-align:center"><code>{U+00F1}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+N, o</td>
+<td>Latin Small Letter O with Tilde</td>
+<td style="text-align:center"><code>{U+00F5}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+N, u</td>
+<td>Latin Small Letter U with Tilde</td>
+<td style="text-align:center"><code>{U+0169}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+N, v</td>
+<td>Latin Small Letter V with Tilde</td>
+<td style="text-align:center"><code>{U+1E7D}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+N, y</td>
+<td>Latin Small Letter Y with Tilde</td>
+<td style="text-align:center"><code>{U+1EF9}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+N, A</td>
+<td>Latin Capital Letter A with Tilde</td>
+<td style="text-align:center"><code>{U+00C3}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+N, E</td>
+<td>Latin Capital Letter E with Tilde</td>
+<td style="text-align:center"><code>{U+1EBC}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+N, I</td>
+<td>Latin Capital Letter I with Tilde</td>
+<td style="text-align:center"><code>{U+0128}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+N, N</td>
+<td>Latin Capital Letter N with Tilde</td>
+<td style="text-align:center"><code>{U+00D1}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+N, O</td>
+<td>Latin Capital Letter O with Tilde</td>
+<td style="text-align:center"><code>{U+00D5}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+N, U</td>
+<td>Latin Capital Letter U with Tilde</td>
+<td style="text-align:center"><code>{U+0168}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+N, V</td>
+<td>Latin Capital Letter V with Tilde</td>
+<td style="text-align:center"><code>{U+1E7C}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+N, Y</td>
+<td>Latin Capital Letter Y with Tilde</td>
+<td style="text-align:center"><code>{U+1EF8}</code></td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after : always; visibility : hidden"> 
+\pagebreak </div>
+<h2 id="%C2%A7-dead-key-ogonek--%CB%9B">§ Dead Key: Ogonek [ ˛ ]</h2>
+<p>Option+M, then key or Shift+key. {U+02DB}</p>
+<pre><code>  Key: a e i o u  
+Lower: ą ę į ǫ ų  
+Upper: Ą Ę Į Ǫ Ų  
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">–– Keys ––</th>
+<th>–––––––––––––––– Description –––––––––––––––––</th>
+<th style="text-align:center">–– Unicode ––</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Opt+M, a</td>
+<td>Latin Small Letter A with Ogonek</td>
+<td style="text-align:center"><code>{U+0105}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+M, e</td>
+<td>Latin Small Letter E with Ogonek</td>
+<td style="text-align:center"><code>{U+0119}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+M, i</td>
+<td>Latin Small Letter I with Ogonek</td>
+<td style="text-align:center"><code>{U+012F}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+M, o</td>
+<td>Latin Small Letter O with Ogonek</td>
+<td style="text-align:center"><code>{U+01EB}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+M, u</td>
+<td>Latin Small Letter U with Ogonek</td>
+<td style="text-align:center"><code>{U+0173}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+M, A</td>
+<td>Latin Capital Letter A with Ogonek</td>
+<td style="text-align:center"><code>{U+0104}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+M, E</td>
+<td>Latin Capital Letter E with Ogonek</td>
+<td style="text-align:center"><code>{U+0118}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+M, I</td>
+<td>Latin Capital Letter I with Ogonek</td>
+<td style="text-align:center"><code>{U+012E}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+M, O</td>
+<td>Latin Capital Letter O with Ogonek</td>
+<td style="text-align:center"><code>{U+01EA}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Opt+M, U</td>
+<td>Latin Capital Letter U with Ogonek</td>
+<td style="text-align:center"><code>{U+0172}</code></td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after : always; visibility : hidden"> 
+\pagebreak </div>
+<h2 id="%C2%A7-dead-key-hook--%CA%94--1-of-2-lowercase">§ Dead Key: Hook [ ʔ ] (1 of 2: Lowercase)</h2>
+<p>Shift+Option+. (Dot/Period), then key or Shift+key. {U+0294}</p>
+<pre><code>  Key: b c d f g h i k n p q r s t u x y z  
+Lower: ɓ ƈ ɗ ƒ ɠ ɦ ɩ ƙ ɲ ƥ ʠ ʈ ʃ ƭ ʋ ɖ ƴ ȥ  
+Upper: Ɓ Ƈ Ɗ Ƒ Ɠ   Ɩ Ƙ Ɲ Ƥ   Ʈ Ʃ Ƭ Ʋ Ɖ Ƴ Ȥ  
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">–– Keys ––</th>
+<th>–––––––––––––––– Description –––––––––––––––––</th>
+<th style="text-align:center">–– Unicode ––</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">⇧+Opt+., b</td>
+<td>Latin Small Letter B with Hook</td>
+<td style="text-align:center"><code>{U+0253}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+., c</td>
+<td>Latin Small Letter C with Hook</td>
+<td style="text-align:center"><code>{U+0188}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+., d</td>
+<td>Latin Small Letter D with Hook</td>
+<td style="text-align:center"><code>{U+0257}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+., f</td>
+<td>Latin Small Letter F with Hook (function)</td>
+<td style="text-align:center"><code>{U+0192}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+., g</td>
+<td>Latin Small Letter G with Hook</td>
+<td style="text-align:center"><code>{U+0260}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+., h</td>
+<td>Latin Small Letter H with Hook</td>
+<td style="text-align:center"><code>{U+0266}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+., i</td>
+<td>Latin Small Letter Iota</td>
+<td style="text-align:center"><code>{U+0269}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+., k</td>
+<td>Latin Small Letter K with Hook</td>
+<td style="text-align:center"><code>{U+0199}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+., n</td>
+<td>Latin Small Letter N with Left Hook</td>
+<td style="text-align:center"><code>{U+0272}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+., p</td>
+<td>Latin Small Letter P with Hook</td>
+<td style="text-align:center"><code>{U+01A5}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+., q</td>
+<td>Latin Small Letter Q with Hook</td>
+<td style="text-align:center"><code>{U+02A0}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+., r</td>
+<td>Latin Small Letter T with Retroflex Hook</td>
+<td style="text-align:center"><code>{U+0288}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+., s</td>
+<td>Latin Small Letter Esh</td>
+<td style="text-align:center"><code>{U+0283}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+., t</td>
+<td>Latin Small Letter T with Hook</td>
+<td style="text-align:center"><code>{U+01AD}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+., u</td>
+<td>Latin Small Letter V with Hook</td>
+<td style="text-align:center"><code>{U+028B}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+., x</td>
+<td>Latin Small Letter D with Tail</td>
+<td style="text-align:center"><code>{U+0256}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+., y</td>
+<td>Latin Small Letter Y with Hook</td>
+<td style="text-align:center"><code>{U+01B4}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+., z</td>
+<td>Latin Small Letter Z with Hook</td>
+<td style="text-align:center"><code>{U+0225}</code></td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after : always; visibility : hidden"> 
+\pagebreak </div>
+<h2 id="%C2%A7-dead-key-hook--%CA%94--2-of-2-uppercase">§ Dead Key: Hook [ ʔ ] (2 of 2: Uppercase)</h2>
+<p>Shift+Option+. (Dot/Period), then key or Shift+key. {U+0294}</p>
+<pre><code>  Key: b c d f g h i k n p q r s t u x y z  
+Lower: ɓ ƈ ɗ ƒ ɠ ɦ ɩ ƙ ɲ ƥ ʠ ʈ ʃ ƭ ʋ ɖ ƴ ȥ  
+Upper: Ɓ Ƈ Ɗ Ƒ Ɠ   Ɩ Ƙ Ɲ Ƥ   Ʈ Ʃ Ƭ Ʋ Ɖ Ƴ Ȥ  
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">–– Keys ––</th>
+<th>–––––––––––––––– Description –––––––––––––––––</th>
+<th style="text-align:center">–– Unicode ––</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">⇧+Opt+., B</td>
+<td>Latin Capital Letter B with Hook</td>
+<td style="text-align:center"><code>{U+0181}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+., C</td>
+<td>Latin Capital Letter C with Hook</td>
+<td style="text-align:center"><code>{U+0187}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+., D</td>
+<td>Latin Capital Letter D with Hook</td>
+<td style="text-align:center"><code>{U+018A}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+., F</td>
+<td>Latin Capital Letter F with Hook</td>
+<td style="text-align:center"><code>{U+0191}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+., G</td>
+<td>Latin Capital Letter G with Hook</td>
+<td style="text-align:center"><code>{U+0193}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+., I</td>
+<td>Latin Capital Letter Iota</td>
+<td style="text-align:center"><code>{U+0196}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+., K</td>
+<td>Latin Capital Letter K with Hook</td>
+<td style="text-align:center"><code>{U+0198}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+., N</td>
+<td>Latin Capital Letter N with Left Hook</td>
+<td style="text-align:center"><code>{U+019D}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+., P</td>
+<td>Latin Capital Letter P with Hook</td>
+<td style="text-align:center"><code>{U+01A4}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+., R</td>
+<td>Latin Capital Letter T with Retroflex Hook</td>
+<td style="text-align:center"><code>{U+01AE}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+., S</td>
+<td>Latin Capital Letter Esh</td>
+<td style="text-align:center"><code>{U+01A9}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+., T</td>
+<td>Latin Capital Letter T with Hook</td>
+<td style="text-align:center"><code>{U+01AC}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+., U</td>
+<td>Latin Capital Letter V with Hook</td>
+<td style="text-align:center"><code>{U+01B2}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+., X</td>
+<td>Latin Capital Letter African D</td>
+<td style="text-align:center"><code>{U+0189}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+., Y</td>
+<td>Latin Capital Letter Y with Hook</td>
+<td style="text-align:center"><code>{U+01B3}</code></td>
+</tr>
+<tr>
+<td style="text-align:center">⇧+Opt+., Z</td>
+<td>Latin Capital Letter Z with Hook</td>
+<td style="text-align:center"><code>{U+0224}</code></td>
+</tr>
+</tbody>
+</table>
+<br/>  
+<br/>  
+<hr>
+<p><strong>◊ End of Document</strong></p>
+
+</body>
+</html>
