@@ -23,7 +23,7 @@ The last five pages are dedicated to **_[Notes]_** listing all the accented char
 
 –– Keys –– | –––––––––––––– Description ––––––––––––––– | –– Unicode –– | –– Alt Code ––
 :---------:|--------------------------------------------|:-------------:|:--------------:
-   Opt+\`  | **Dead Keys Grave accent** (combining)     |   `[Note 1]`    |  _(See below)_
+   Opt+\`  | **Dead Key: Grave Accent** (combining)     |   `[Note 1]`    |  _(See below)_
    Opt+1   | Inverted Exclamation Mark                  |   `{U+00A1}`    |   _(Alt+173)_
    Opt+2   | Trade Mark Sign Emoji                      |   `{U+2122}`    |  _(Alt+0153)_
    Opt+3   | British Pound currency symbol              |   `{U+00A3}`    |   _(Alt+156)_
@@ -79,12 +79,12 @@ The last five pages are dedicated to **_[Notes]_** listing all the accented char
 :---------:|---------------------------------------------|:-------------:|:--------------:
    Opt+Q   | Small oe (oethel) ligature                  |  `{U+0153}`   |  _(Alt+0156)_
    Opt+W   | N-Ary Summation (sigma) notation            |  `{U+2211}`   | _(No Alt Code)_
-   Opt+E   | **Dead Keys Acute accent** (combining)      |  `[Note 2]`   |  _(See below)_
+   Opt+E   | **Dead Key: Acute Accent** (combining)      |  `[Note 2]`   |  _(See below)_
    Opt+R   | Registered Trade Mark Sign                  |  `{U+00AE}`   |  _(Alt+0174)_
    Opt+T   | Simple dagger (cross) symbol                |  `{U+2020}`   |  _(Alt+0134)_
    Opt+Y   | Japanese Yen currency symbol                |  `{U+00A5}`   |   _(Alt+157)_
-   Opt+U   | **Dead Keys Umlaut accent** (combining)     |  `[Note 3]`   |  _(See below)_
-   Opt+I   | **Dead Keys Circumflex accent** (combining) |  `[Note 4]`   |  _(See below)_
+   Opt+U   | **Dead Key: Umlaut/Diaeresis** (combining)  |  `[Note 3]`   |  _(See below)_
+   Opt+I   | **Dead Key: Circumflex Accent** (combining) |  `[Note 4]`   |  _(See below)_
    Opt+O   | Latin Small Letter o with Stroke            |  `{U+00F8}`   |  _(Alt+0248)_
    Opt+P   | Greek Small Letter Pi                       |  `{U+03C0}`   |   _(Alt+227)_
    Opt+[   | Left Double Quotation Mark                  |  `{U+201C}`   |  _(Alt+0147)_
@@ -188,7 +188,7 @@ The last five pages are dedicated to **_[Notes]_** listing all the accented char
    Opt+C   | Small Letter c with Cedilla                |  `{U+00E7}`   |   _(Alt+130)_
    Opt+V   | Square Root radical sign                   |  `{U+221A}`   |   _(Alt+251)_
    Opt+B   | Integral mathematical symbol               |  `{U+222B}`   | _(No Alt Code)_
-   Opt+N   | **Dead Keys Tilde accent** (combining)     |  `[Note 5]`   |  _(See below)_
+   Opt+N   | **Dead Key: Tilde** (combining)            |  `[Note 5]`   |  _(See below)_
    Opt+M   | Micro (mu) symbol                          |  `{U+00B5}`   |   _(Alt+230)_
    Opt+,   | Less Than or Equal To symbol               |  `{U+2264}`   |   _(Alt+243)_
    Opt+.   | Greater Than or Equal To symbol            |  `{U+2265}`   |   _(Alt+242)_
@@ -222,7 +222,7 @@ The last five pages are dedicated to **_[Notes]_** listing all the accented char
 <div style="page-break-after : always; visibility : hidden"> 
 \pagebreak </div>
 
-## § [Note 1] Dead Keys: Grave Accent [ ` ]
+## § [Note 1] Dead Key: Grave Accent [ ` ]
 
 Type Option+Grave, then a/e/i/o/u or A/E/I/O/U, to produce:  
 
@@ -233,11 +233,11 @@ Type Option+Grave, then a/e/i/o/u or A/E/I/O/U, to produce:
 
 –– Keys –– | –––––––––––––– Description ––––––––––––––– | –– Unicode –– | –– Alt Code ––
 :---------:|--------------------------------------------|:-------------:|:-------------:
- Opt+\`, a | Latin Small a with Grave                   |   `{U+00E0}`  |  _(Alt+0224)_
- Opt+\`, e | Latin Small e with Grave                   |   `{U+00E8}`  |  _(Alt+0232)_
- Opt+\`, i | Latin Small i with Grave                   |   `{U+00EC}`  |  _(Alt+0236)_
- Opt+\`, o | Latin Small o with Grave                   |   `{U+00F2}`  |  _(Alt+0242)_
- Opt+\`, u | Latin Small u with Grave                   |   `{U+00F9}`  |  _(Alt+0249)_
+ Opt+\`, a | Latin Small A with Grave                   |   `{U+00E0}`  |  _(Alt+0224)_
+ Opt+\`, e | Latin Small E with Grave                   |   `{U+00E8}`  |  _(Alt+0232)_
+ Opt+\`, i | Latin Small I with Grave                   |   `{U+00EC}`  |  _(Alt+0236)_
+ Opt+\`, o | Latin Small O with Grave                   |   `{U+00F2}`  |  _(Alt+0242)_
+ Opt+\`, u | Latin Small U with Grave                   |   `{U+00F9}`  |  _(Alt+0249)_
  Opt+\`, A | Latin Capital A with Grave                 |   `{U+00C0}`  |  _(Alt+0192)_
  Opt+\`, E | Latin Capital E with Grave                 |   `{U+00C8}`  |  _(Alt+0200)_
  Opt+\`, I | Latin Capital I with Grave                 |   `{U+00CC}`  |  _(Alt+0204)_
@@ -248,7 +248,7 @@ Type Option+Grave, then a/e/i/o/u or A/E/I/O/U, to produce:
 <div style="page-break-after : always; visibility : hidden"> 
 \pagebreak </div>
 
-## § [Note 2] Dead Keys: Acute Accent [ ´ ]
+## § [Note 2] Dead Key: Acute Accent [ ´ ]
 
 Type Option+E, then a/e/i/o/u or A/E/I/O/U, to produce:  
 
@@ -259,11 +259,11 @@ Type Option+E, then a/e/i/o/u or A/E/I/O/U, to produce:
 
 –– Keys –– | –––––––––––––– Description ––––––––––––––– | –– Unicode –– | –– Alt Code ––
 :---------:|--------------------------------------------|:-------------:|:-------------:
- Opt+E, a  | Latin Small a with Acute                   |  `{U+00E1}`   |  _(Alt+0225)_
- Opt+E, e  | Latin Small e with Acute                   |  `{U+00E9}`   |  _(Alt+0233)_
- Opt+E, i  | Latin Small i with Acute                   |  `{U+00ED}`   |  _(Alt+0237)_
- Opt+E, o  | Latin Small o with Acute                   |  `{U+00F3}`   |  _(Alt+0243)_
- Opt+E, u  | Latin Small u with Acute                   |  `{U+00FA}`   |  _(Alt+0250)_
+ Opt+E, a  | Latin Small A with Acute                   |  `{U+00E1}`   |  _(Alt+0225)_
+ Opt+E, e  | Latin Small E with Acute                   |  `{U+00E9}`   |  _(Alt+0233)_
+ Opt+E, i  | Latin Small I with Acute                   |  `{U+00ED}`   |  _(Alt+0237)_
+ Opt+E, o  | Latin Small O with Acute                   |  `{U+00F3}`   |  _(Alt+0243)_
+ Opt+E, u  | Latin Small U with Acute                   |  `{U+00FA}`   |  _(Alt+0250)_
  Opt+E, A  | Latin Capital A with Acute                 |  `{U+00C1}`   |  _(Alt+0193)_
  Opt+E, E  | Latin Capital E with Acute                 |  `{U+00C9}`   |  _(Alt+0201)_
  Opt+E, I  | Latin Capital I with Acute                 |  `{U+00CD}`   |  _(Alt+0205)_
@@ -274,7 +274,7 @@ Type Option+E, then a/e/i/o/u or A/E/I/O/U, to produce:
 <div style="page-break-after : always; visibility : hidden"> 
 \pagebreak </div>
 
-## § [Note 3] Dead Keys: Umlaut Accent [ ¨ ]
+## § [Note 3] Dead Key: Umlaut/Diaeresis [ ¨ ]
 
 Type Option+U, then a/e/i/o/u/y or A/E/I/O/U/Y, to produce:  
 
@@ -285,24 +285,24 @@ Type Option+U, then a/e/i/o/u/y or A/E/I/O/U/Y, to produce:
 
 –– Keys –– | –––––––––––––– Description ––––––––––––––– | –– Unicode –– | –– Alt Code ––
 :---------:|--------------------------------------------|:-------------:|:-------------:
- Opt+U, a  | Latin Small a with Umlaut                  |  `{U+00E4}`   |  _(Alt+0228)_
- Opt+U, e  | Latin Small e with Umlaut                  |  `{U+00EB}`   |  _(Alt+0235)_
- Opt+U, i  | Latin Small i with Umlaut                  |  `{U+00EF}`   |  _(Alt+0239)_
- Opt+U, o  | Latin Small o with Umlaut                  |  `{U+00F6}`   |  _(Alt+0246)_
- Opt+U, u  | Latin Small u with Umlaut                  |  `{U+00FC}`   |  _(Alt+0252)_
- Opt+U, y  | Latin Small y with Umlaut                  |  `{U+00FF}`   |  _(Alt+0255)_
- Opt+U, A  | Latin Capital A with Umlaut                |  `{U+00C4}`   |  _(Alt+0196)_
- Opt+U, E  | Latin Capital E with Umlaut                |  `{U+00CB}`   |  _(Alt+0203)_
- Opt+U, I  | Latin Capital I with Umlaut                |  `{U+00CF}`   |  _(Alt+0207)_
- Opt+U, O  | Latin Capital O with Umlaut                |  `{U+00D6}`   |  _(Alt+0214)_
- Opt+U, U  | Latin Capital U with Umlaut                |  `{U+00DC}`   |  _(Alt+0220)_
- Opt+U, Y  | Latin Capital Y with Umlaut                |  `{U+0178}`   |  _(Alt+0159)_
+ Opt+U, a  | Latin Small A with Diaeresis               |  `{U+00E4}`   |  _(Alt+0228)_
+ Opt+U, e  | Latin Small E with Diaeresis               |  `{U+00EB}`   |  _(Alt+0235)_
+ Opt+U, i  | Latin Small I with Diaeresis               |  `{U+00EF}`   |  _(Alt+0239)_
+ Opt+U, o  | Latin Small O with Diaeresis               |  `{U+00F6}`   |  _(Alt+0246)_
+ Opt+U, u  | Latin Small U with Diaeresis               |  `{U+00FC}`   |  _(Alt+0252)_
+ Opt+U, y  | Latin Small Y with Diaeresis               |  `{U+00FF}`   |  _(Alt+0255)_
+ Opt+U, A  | Latin Capital A with Diaeresis             |  `{U+00C4}`   |  _(Alt+0196)_
+ Opt+U, E  | Latin Capital E with Diaeresis             |  `{U+00CB}`   |  _(Alt+0203)_
+ Opt+U, I  | Latin Capital I with Diaeresis             |  `{U+00CF}`   |  _(Alt+0207)_
+ Opt+U, O  | Latin Capital O with Diaeresis             |  `{U+00D6}`   |  _(Alt+0214)_
+ Opt+U, U  | Latin Capital U with Diaeresis             |  `{U+00DC}`   |  _(Alt+0220)_
+ Opt+U, Y  | Latin Capital Y with Diaeresis             |  `{U+0178}`   |  _(Alt+0159)_
 
 
 <div style="page-break-after : always; visibility : hidden"> 
 \pagebreak </div>
 
-## § [Note 4] Dead Keys: Circumflex Accent [ ˆ ]
+## § [Note 4] Dead Key: Circumflex Accent [ ˆ ]
 
 Type Option+I, then a/e/i/o/u or A/E/I/O/U, to produce: 
 
@@ -313,11 +313,11 @@ Type Option+I, then a/e/i/o/u or A/E/I/O/U, to produce:
 
 –– Keys –– | –––––––––––––– Description ––––––––––––––– | –– Unicode –– | –– Alt Code ––
 :---------:|--------------------------------------------|:-------------:|:-------------:
- Opt+I, a  | Latin Small a with Circumflex              |  `{U+00E2}`   |  _(Alt+0226)_
- Opt+I, e  | Latin Small e with Circumflex              |  `{U+00EA}`   |  _(Alt+0234)_
- Opt+I, i  | Latin Small i with Circumflex              |  `{U+00EE}`   |  _(Alt+0238)_
- Opt+I, o  | Latin Small o with Circumflex              |  `{U+00F4}`   |  _(Alt+0244)_
- Opt+I, u  | Latin Small u with Circumflex              |  `{U+00FB}`   |  _(Alt+0251)_
+ Opt+I, a  | Latin Small A with Circumflex              |  `{U+00E2}`   |  _(Alt+0226)_
+ Opt+I, e  | Latin Small E with Circumflex              |  `{U+00EA}`   |  _(Alt+0234)_
+ Opt+I, i  | Latin Small I with Circumflex              |  `{U+00EE}`   |  _(Alt+0238)_
+ Opt+I, o  | Latin Small O with Circumflex              |  `{U+00F4}`   |  _(Alt+0244)_
+ Opt+I, u  | Latin Small U with Circumflex              |  `{U+00FB}`   |  _(Alt+0251)_
  Opt+I, A  | Latin Capital A with Circumflex            |  `{U+00C2}`   |  _(Alt+0194)_
  Opt+I, E  | Latin Capital E with Circumflex            |  `{U+00CA}`   |  _(Alt+0202)_
  Opt+I, I  | Latin Capital I with Circumflex            |  `{U+00CE}`   |  _(Alt+0206)_
@@ -328,7 +328,7 @@ Type Option+I, then a/e/i/o/u or A/E/I/O/U, to produce:
 <div style="page-break-after : always; visibility : hidden"> 
 \pagebreak </div>
 
-## § [Note 5] Dead Keys: Tilde Accent [ ˜ ]
+## § [Note 5] Dead Key: Tilde Accent [ ˜ ]
 
 Type Option+N, then a/n/o or A/N/O to produce: 
 
@@ -339,9 +339,9 @@ Type Option+N, then a/n/o or A/N/O to produce:
 
 –– Keys –– | –––––––––––––– Description ––––––––––––––– | –– Unicode –– | –– Alt Code ––
 :---------:|--------------------------------------------|:-------------:|:-------------:
- Opt+N, a  | Latin Small a with Tilde                   |  `{U+00E3}`   |  _(Alt+0227)_
- Opt+N, n  | Latin Small n with Tilde                   |  `{U+00F1}`   |  _(Alt+0241)_
- Opt+N, o  | Latin Small o with Tilde                   |  `{U+00F5}`   |  _(Alt+0245)_
+ Opt+N, a  | Latin Small A with Tilde                   |  `{U+00E3}`   |  _(Alt+0227)_
+ Opt+N, n  | Latin Small N with Tilde                   |  `{U+00F1}`   |  _(Alt+0241)_
+ Opt+N, o  | Latin Small O with Tilde                   |  `{U+00F5}`   |  _(Alt+0245)_
  Opt+N, A  | Latin Capital A with Tilde                 |  `{U+00C3}`   |  _(Alt+0195)_
  Opt+N, N  | Latin Capital N with Tilde                 |  `{U+00D1}`   |  _(Alt+0209)_
  Opt+N, O  | Latin Capital O with Tilde                 |  `{U+00D5}`   |  _(Alt+0213)_
